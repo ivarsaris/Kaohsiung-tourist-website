@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Scrolling Nav - Start Bootstrap Template</title>
+  <title>Kaohsiung</title>
 
   <!-- CSS that came with Bootstrap template -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -96,7 +96,6 @@
           <h2>Places to stay</h2>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
         </div>
-        <div id="mapPlaces"></div>
       </div>
     </div>
   </section>
@@ -138,7 +137,7 @@
 
   <!-- Things to do Google maps scripts -->
   <script>
-    function initMapThings() {
+    function initMap() {
       var mapThings = new google.maps.Map(document.getElementById("mapThings"), {
         zoom: 10,
         center: {
@@ -146,14 +145,6 @@
           lng: 120.342845
         }
       });
-    }
-  </script>
-  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6mj1_xGfgwcSZCgynF5582WAzSvfQIWs&callback=initMapThings"></script>
-
-  <!-- places to stay Google maps scripts -->
-  <script>
-    function initMapPlaces() {
       var mapPlaces = new google.maps.Map(document.getElementById("mapPlaces"), {
         zoom: 5,
         center: {
@@ -163,9 +154,11 @@
       });
     }
   </script>
-
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJNIJdSyMYCmen-e466Vn0Ysq36-CelU&callback=initMapPlaces"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6mj1_xGfgwcSZCgynF5582WAzSvfQIWs&callback=initMap"></script>
+
+  <!-- places to stay Google maps scripts -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJNIJdSyMYCmen-e466Vn0Ysq36-CelU&callback=initMap"></script>
 </body>
 
 </html>
