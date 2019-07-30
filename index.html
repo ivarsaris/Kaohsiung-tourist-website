@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Scrolling Nav - Start Bootstrap Template</title>
+
+  <!-- CSS that came with Bootstrap template -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#things-to-do">Things to do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#foods-to-eat">Foods to eat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#places-to-stay">Places to stay</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#how-to-get-there">How to get there</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="welcome">
+    <div class="bg-info">
+      <div class="container text-center">
+        <h1>Kaohsiung</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi in rerum quidem recusandae aspernatur repellendus non odit perspiciatis, pariatur temporibus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="things-to-do">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Things to do</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptate blanditiis eveniet mollitia ad! Ab adipisci cumque non molestias sed dolorem, odio at! Doloremque non voluptas, dicta tenetur nostrum placeat impedit enim iure est.
+            Repellendus porro natus optio minima adipisci dolore eaque nulla magnam possimus, earum, eius repellat facere molestiae!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapThings">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="mapThings"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="foods-to-eat" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Foods to eat</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="places-to-stay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Places to stay</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        </div>
+        <div id="mapPlaces"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapPlaces">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="mapPlaces"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-to-get-there" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>How to get there</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- links to JavaScript that came with Bootstrap template -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+
+  <!-- Things to do Google maps scripts -->
+  <script>
+    function initMapThings() {
+      var mapThings = new google.maps.Map(document.getElementById("mapThings"), {
+        zoom: 10,
+        center: {
+          lat: 22.652951,
+          lng: 120.342845
+        }
+      });
+    }
+  </script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6mj1_xGfgwcSZCgynF5582WAzSvfQIWs&callback=initMapThings"></script>
+
+  <!-- places to stay Google maps scripts -->
+  <script>
+    function initMapPlaces() {
+      var mapPlaces = new google.maps.Map(document.getElementById("mapPlaces"), {
+        zoom: 5,
+        center: {
+          lat: 22.652951,
+          lng: 120.342845
+        }
+      });
+    }
+  </script>
+
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJNIJdSyMYCmen-e466Vn0Ysq36-CelU&callback=initMapPlaces"></script>
+</body>
+
+</html>
