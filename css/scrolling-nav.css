@@ -4,9 +4,21 @@ header {
 }
 
 section {
-  padding: 150px 0;
+  padding: 50px 0;
 }
 
 .navbar {
   position: fixed;
+}
+
+#mapThings {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+}
+
+#mapPlaces {
+  width: 800px;
+  height: 500px;
+  margin: auto;
 }

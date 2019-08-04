@@ -9,12 +9,12 @@
   <meta name="author" content="">
 
   <title>Kaohsiung</title>
-  
+
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-  
+
   <!-- CSS that came with Bootstrap template -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -135,9 +135,10 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/scrolling-nav.js"></script>
 
-  <!-- Things to do Google maps scripts -->
+  <!-- maps -->
   <script>
     function initMap() {
+      // map things to do
       var mapThings = new google.maps.Map(document.getElementById("mapThings"), {
         zoom: 10,
         center: {
@@ -145,6 +146,38 @@
           lng: 120.342845
         }
       });
+      /*
+      // Adding markers
+      var marker = new google.maps.Marker({
+        position: {
+          lat: 22.622697, 
+          lng: 120.344065
+        },
+        map: mapThings
+      });
+       
+      // Adding infowindow to marker
+      var infoWindow = new google.maps.InfoWindow ({
+        content: "<h2>place 1</h2>"
+      });
+       
+      marker.addListener("click", function(){
+        infoWindow.open(mapThings, marker);
+      });
+      */
+
+      addMarker({
+        coordinates: { lat: 22.619805, lng: 120.344462 },
+      });
+
+      // add marker function
+      function addMarker(properties) {
+        var marker = new google.maps.Marker({
+          position: properties.coordinates,
+          map: mapThings
+        });
+      }
+      // map places to stay
       var mapPlaces = new google.maps.Map(document.getElementById("mapPlaces"), {
         zoom: 5,
         center: {
@@ -155,6 +188,8 @@
     }
   </script>
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+  <!--Things to do Google Maps script-->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6mj1_xGfgwcSZCgynF5582WAzSvfQIWs&callback=initMap"></script>
 
   <!-- places to stay Google maps scripts -->
