@@ -1,6 +1,4 @@
-header {
-  padding: 156px 0 100px;
-}
+/*general styling*/
 
 section {
   padding: 50px 0;
@@ -9,6 +7,40 @@ section {
 .navbar {
   position: fixed;
 }
+
+.
+
+/*welcome image with text */
+
+.welcome {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.welcome img {
+  border: solid 5px #343a40;
+}
+
+.titleText {
+  position: absolute;
+  padding: 10px 20px;
+  top: 20%;
+  left: 20%;
+  background: #343a40;
+}
+
+.titleText h1 {
+  font-size: 4em;
+}
+
+.titleText p {
+  font-size: 2em;
+}
+
+
+
+/*maps*/
 
 #mapThings {
   width: 800px;
@@ -21,6 +53,8 @@ section {
   height: 500px;
   margin: auto;
 }
+
+/* food images with sliding text */
 
 .foodImage {
   position: relative;
@@ -52,7 +86,6 @@ section {
   padding: 0 8px;
   content: attr(data-title);
   transition: 0.5s 0.1s;
-  color: #fff;
   font-weight: bold;
   font-size: 1.5em;
 }
