@@ -8,7 +8,10 @@ section {
   position: fixed;
 }
 
-.
+.secondBackground {
+  color: #fff;
+  background-color: #7a93b2;
+}
 
 /*welcome image with text */
 
@@ -19,7 +22,7 @@ section {
 }
 
 .welcome img {
-  border: solid 5px #343a40;
+  border: solid 5px #7a93b2;
 }
 
 .titleText {
@@ -27,7 +30,7 @@ section {
   padding: 10px 20px;
   top: 20%;
   left: 20%;
-  background: #343a40;
+  background: #7a93b2;
 }
 
 .titleText h1 {
@@ -117,4 +120,15 @@ section {
   padding: 8px;
   background-color: rgba(0, 0, 0, 0.6);
   transition: 0.5s;
+}
+
+.howToGetThere img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+.howToGetThere p {
+  text-align: left;
 }
