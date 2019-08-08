@@ -1,7 +1,7 @@
 /*general styling*/
 
 body {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 section {
@@ -25,10 +25,8 @@ section {
 }
 
 .navbar-expand .navbar-collapse {
-  display: block!important;
+  display: block;
 }
-
-
 
 /*welcome image with text */
 
@@ -39,6 +37,8 @@ section {
 }
 
 .welcome img {
+  max-width: 100%;
+  max-height: auto;
   border: solid 5px #7a93b2;
 }
 
@@ -63,12 +63,16 @@ section {
 #mapThings {
   width: 800px;
   height: 500px;
+  max-width: 100%;
+  max-height: auto;
   margin: auto;
 }
 
 #mapPlaces {
   width: 800px;
   height: 500px;
+  max-width: 100%;
+  max-height: auto;
   margin: auto;
 }
 
@@ -80,6 +84,8 @@ adapted to this webpage */
   position: relative;
   width: 400px;
   height: 400px;
+  max-width: 100%;
+  max-height: auto;
   float: left;
   margin: 4px;
   background-size: 100%;
@@ -165,7 +171,7 @@ not showing the restaurants when loading the page*/
 /*How to get there section*/
 
 .howToGetThere {
-  height: 469px;
+  height: 350px;
 }
 
 .howToGetThere img {

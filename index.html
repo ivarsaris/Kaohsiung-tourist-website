@@ -65,8 +65,8 @@
             <div class="row">
                 <div class="col-lg-8">
                     <h2>Things to do</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptate blanditiis eveniet mollitia ad! Ab adipisci cumque non molestias sed dolorem, odio at! Doloremque non voluptas, dicta tenetur nostrum placeat impedit enim
-                        iure est. Repellendus porro natus optio minima adipisci dolore eaque nulla magnam possimus, earum, eius repellat facere molestiae!</p>
+                    <p class="lead">There are many things to do in Kaoshiung. From hiking in the beautiful monkey mountain to sniffing culture at the Fo Guang Shan Buddha memorial center. On the map you will find our 11 most recommended activities and places to visit
+                        when staying in Kaohsiung.</p>
                 </div>
             </div>
         </div>
@@ -74,6 +74,43 @@
             <div class="row">
                 <div class="col-md-6">
                     <div id="mapThings"></div>
+                </div>
+                <div class="col-md-6">
+                    <h6>Pier2 Art Center</h6>
+                    <p>https://en.wikipedia.org/wiki/Pier-2_Art_Center</p>
+
+                    <h6>lotus lake</h6>
+                    <p>https://en.wikipedia.org/wiki/Lotus_Pond,_Kaohsiung</p>
+
+                    <h6>qijin</h6>
+                    <p>https://en.wikipedia.org/wiki/Cijin_District,_Kaohsiung#Tourist_attractions</p>
+
+                    <h6>Shou Shan viewpoint and zoo</h6>
+                    <p>https://en.wikipedia.org/wiki/Shou_Shan_Zoo</p>
+
+                    <h6>Ruifeng Night Market</h6>
+                    <p>https://en.wikipedia.org/wiki/Ruifeng_Night_Market</p>
+
+                    <h6>Liuhe Night Market</h6>
+                    <p>https://en.wikipedia.org/wiki/Liuhe_Night_Market</p>
+
+                    <h6>Chaishan Secret Beach<br /></h6>
+                    <br />
+
+                    <h6>Fo Guang Shan Buddha Memorial Center</h6>
+                    <p>https://en.wikipedia.org/wiki/Fo_Guang_Shan_Buddha_Museum</p>
+
+                    <h6>Love river<br /></h6>
+                    <br />
+
+                    <h6>Chai Shan(monkey mountain)</h6>
+                    <p>https://en.wikipedia.org/wiki/Shoushan_</p>
+
+                    <h6>Kaohsiung Exhibition Center</h6>
+                    <p>https://en.wikipedia.org/wiki/Kaohsiung_Exhibition_Center</p>
+
+                    <h6>National Kaohsiung Centre for the Arts</h6>
+                    <p>https://en.wikipedia.org/wiki/National_Kaohsiung_Center_for_the_Arts</p>
                 </div>
             </div>
         </div>
@@ -93,12 +130,12 @@
                         including baking, boiling, frying, simmering, or steaming, and are found in many world cuisines."></div>
                     </div>
                     <div class="row">
-                        <p onclick="dumplingRestFunction()"><strong>Show restaurants</strong></p>
-                        <div id="dumplingRestaurants">
-                            <p>Din Tai Fung Kaohsiung Store, B1, No.777 Bo'ai Er Road, Kaohsiung</p>
-                            <p>Yonghe Steamed Dumpling, No. 33, Yancheng St., Yancheng Dist, Kaohsiung</p>
-                            <p>Hou de Fu Steamed Dumpling, No. 156, Ziqiang 3rd Rd., Lingya Dist, Kaohsiung</p>
-                        </div>
+                        <p onclick="dumplingRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                    </div>
+                    <div class="row" id="dumplingRestaurants">
+                        <p>Din Tai Fung Kaohsiung Store, B1, No.777 Bo'ai Er Road, Kaohsiung</p>
+                        <p>Yonghe Steamed Dumpling, No. 33, Yancheng St., Yancheng Dist, Kaohsiung</p>
+                        <p>Hou de Fu Steamed Dumpling, No. 156, Ziqiang 3rd Rd., Lingya Dist, Kaohsiung</p>
                     </div>
                 </div>
 
@@ -108,47 +145,47 @@
                         Snow ice isn't heavy like ice cream, it features soft ribbons of flavored ice then topped with various coconut jelly, sweet beans, and other dessert toppings."></div>
                     </div>
                     <div class="row">
-                        <p onclick="iceRestFunction()"><strong>Show restaurants</strong></p>
-                            <div id="iceRestaurants">
-                                <p>Bingo snowice, No.76, Liuhe 2nd Rd.,, Xinxing District, Kaohsiung 800</p>
-                                <p>Gao Xiong Po Po Shaved Ice, No. 135, Qixian 3rd Rd., Yancheng Dist, Kaohsiung</p>
-                                <p>Mang Guo Hao Mang, No.401, Fumin RD, Zuoying Dist, Kaohsiung 813</p>
-                            </div>
+                        <p onclick="iceRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                    </div>
+                    <div class="row" id="iceRestaurants">
+                        <p>Bingo snowice, No.76, Liuhe 2nd Rd.,, Xinxing District, Kaohsiung 800</p>
+                        <p>Gao Xiong Po Po Shaved Ice, No. 135, Qixian 3rd Rd., Yancheng Dist, Kaohsiung</p>
+                        <p>Mang Guo Hao Mang, No.401, Fumin RD, Zuoying Dist, Kaohsiung 813</p>
                     </div>
                 </div>
-                
+
                 <div class="col-12 col-md-6">
                     <div class="row">
                         <div class="foodImage" style="background-image:url(media/tofu.jpg)" data-title="Stinky Tofu" data-text="Stinky tofu (Chinese: 臭豆腐; pinyin: chòudòufu) is a Chinese form of fermented tofu that has a strong odor. 
                         It is usually sold at night markets or roadside stands as a snack, or in lunch bars as a side dish, rather than in restaurants."></div>
                     </div>
                     <div class="row">
-                        <p onclick="tofuRestFunction()"><strong>Show restaurants</strong></p>
-                            <div id="tofuRestaurants">
-                                <p>Jiang Hao Ji Stinky Tofu King, No. 40, Minsheng 2nd Rd., Xinxing Dist, Kaohsiung</p>
-                                <p>Fu Ji Stinky Tofu, No. 117-7, Wufu 3rd Rd., Lingya Dist, Kaohsiung</p>
-                                <p>Lu Family Stinky Tofu King, No. 253, Zhonghua 3rd Rd, Sanmin Dist, Kaohsiung</p>
-                            </div>
+                        <p onclick="tofuRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                    </div>
+                    <div class="row" id="tofuRestaurants">
+                        <p>Jiang Hao Ji Stinky Tofu King, No. 40, Minsheng 2nd Rd., Xinxing Dist, Kaohsiung</p>
+                        <p>Fu Ji Stinky Tofu, No. 117-7, Wufu 3rd Rd., Lingya Dist, Kaohsiung</p>
+                        <p>Lu Family Stinky Tofu King, No. 253, Zhonghua 3rd Rd, Sanmin Dist, Kaohsiung</p>
                     </div>
                 </div>
-                
+
                 <div class="col-12 col-md-6">
                     <div class="row">
                         <div class="foodImage" style="background-image:url(media/breakfast.jpg)" data-title="Taiwanese breakfast" data-text="The typical Taiwanese breakfast consists of a lot of carbs and egg. It's heavy and usually washed down by a hot glass of soymilk. "></div>
                     </div>
                     <div class="row">
-                        <p onclick="breakfastRestFunction()"><strong>Show restaurants</strong></p>
-                            <div id="breakfastRestaurants">
-                                <p>Xinglongju, No.186 Liuhe Second Road, Kaohsiung</p>
-                                <p>Lao Jiang Milk Black Tea, No. 214-3, Sanduo 3rd Rd., Lingya Dist, Kaohsiung</p>
-                                <p>Chuan He Beef Noodles, No. 306, Jiangong Rd., Sanmin Dist, Kaohsiung</p>
-                            </div>
+                        <p onclick="breakfastRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                    </div>
+                    <div class="row" id="breakfastRestaurants">
+                        <p>Xinglongju, No.186 Liuhe Second Road, Kaohsiung</p>
+                        <p>Lao Jiang Milk Black Tea, No. 214-3, Sanduo 3rd Rd., Lingya Dist, Kaohsiung</p>
+                        <p>Chuan He Beef Noodles, No. 306, Jiangong Rd., Sanmin Dist, Kaohsiung</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section id="places-to-stay" class="firstBackground">
         <div class="container">
             <div class="row">
