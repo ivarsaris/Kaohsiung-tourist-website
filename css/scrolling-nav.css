@@ -1,17 +1,34 @@
 /*general styling*/
 
+body {
+  font-size: 1.5rem;
+}
+
 section {
   padding: 50px 0;
 }
 
-.navbar {
-  position: fixed;
+.firstBackground {
+  color: #343a40e8;
+  background-color: #fff;
 }
 
 .secondBackground {
   color: #fff;
   background-color: #7a93b2;
 }
+
+/*navbar*/
+
+.navbar {
+  position: fixed;
+}
+
+.navbar-expand .navbar-collapse {
+  display: block!important;
+}
+
+
 
 /*welcome image with text */
 
@@ -34,14 +51,12 @@ section {
 }
 
 .titleText h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .titleText p {
-  font-size: 2em;
+  font-size: 1.5em;
 }
-
-
 
 /*maps*/
 
@@ -57,7 +72,9 @@ section {
   margin: auto;
 }
 
-/* food images with sliding text */
+/* food images with sliding text. Concept taken from 
+https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s, 
+adapted to this webpage */ 
 
 .foodImage {
   position: relative;
@@ -122,13 +139,43 @@ section {
   transition: 0.5s;
 }
 
+.foodsToEat p {
+  text-align: justify;
+  width: 400px;
+  max-width: 100%;
+}
+
+#dumplingRestaurants {
+  display: none;
+}
+
+#iceRestaurants {
+  display: none;
+}
+#tofuRestaurants {
+  display: none;
+}
+#breakfastRestaurants {
+  display: none;
+}
+
+/*How to get there section*/
+
+.howToGetThere {
+  height: 469px;
+}
+
 .howToGetThere img {
   width: 300px;
   max-width: 100%;
   height: auto;
   float: left;
+  display: block;
 }
 
 .howToGetThere p {
-  text-align: left;
+  text-align: justify;
+  width: 400px;
+  max-width: 100%;
 }
+

@@ -13,10 +13,13 @@
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
 
     <!-- CSS that came with Bootstrap template -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--own CSS-->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 </head>
 
@@ -57,7 +60,7 @@
         </div>
     </section>
 
-    <section id="things-to-do">
+    <section class="firstBackground" id="things-to-do">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -67,9 +70,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="map-things-to-do">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -79,19 +79,66 @@
         </div>
     </section>
 
-    <section id="foods-to-eat" class="secondBackground">
+    <section class="secondBackground" id="foods-to-eat">
         <div class="container">
             <div class="row">
-                <div class="foodsToEat col-lg-8">
+                <div class="col-lg-8 foodsToEat">
                     <h2>Foods to eat</h2>
-                    <div class="foodImage" style="background-image:url(media/dumplings.jpg)" data-title="Dumplings" data-text="sometimesDumpling is a broad classification for a dish that consists of pieces of dough (made from a variety of starch sources) wrapped around a filling or of dough with no filling. The dough can be based on bread, flour, or potatoes, and may be filled with meat, fish, cheese, vegetables, fruits, or sweets. Dumplings may be prepared using a variety of methods, including baking, boiling, frying, simmering, or steaming, and are found in many world cuisines."></div>
-                    <div class="foodImage" style="background-image:url(media/ice.jpeg)" data-title="Snow ice" data-text="Snow ice is a cold, creamy Taiwanese dessert, also known as shaved snow or xue hua bing. It’s a cross between ice cream and traditional shaved ice desserts. Snow ice isn't heavy like ice cream, it features soft ribbons of flavored ice then topped with various coconut jelly, sweet beans, and other dessert toppings."></div>
-                    <div class="foodImage" style="background-image:url(media/tofu.jpg)" data-title="Stinky Tofu" data-text="Stinky tofu (Chinese: 臭豆腐; pinyin: chòudòufu) is a Chinese form of fermented tofu that has a strong odor. It is usually sold at night markets or roadside stands as a snack, or in lunch bars as a side dish, rather than in restaurants."></div>
-                    <div class="foodImage" style="background-image:url(media/breakfast.jpg)" data-title="Taiwanese breakfast" data-text="The typical Taiwanese breakfast consists of a lot of carbs and egg. It's heavy and usually washed down by a hot glass of soymilk. "></div>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                    <p>Taiwan is heaven for foodies. There are many dishes that are worth trying, from street food to fancy restaurants. There are four foods I feel everyone should try when visiting Kaohsiung.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="foodImage" style="background-image:url(media/dumplings.jpg)" data-title="Dumplings" data-text="sometimesDumpling is a broad classification for a dish that consists of pieces of dough (made from a variety of starch sources) wrapped around a filling or of dough with no filling. The dough can be based on bread, flour, or potatoes, and may be filled with meat, fish, cheese, vegetables, fruits, or sweets. Dumplings may be prepared using a variety of methods, including baking, boiling, frying, simmering, or steaming, and are found in many world cuisines."></div>
+                        <p>There are many, many dumpling restaurants in Kaohsiung. These are restaurants we recommend.</p>
+                        <p onclick="foodsFunction()"><strong>Show/hide restaurants</strong></p>
+                        <div id="dumplingRestaurants">
+                            <p>restaurant 1</p>
+                            <p>restaurant 2</p>
+                            <p>restaurant 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="foodImage" style="background-image:url(media/ice.jpeg)" data-title="Snow ice" data-text="Snow ice is a cold, creamy Taiwanese dessert, also known as shaved snow or xue hua bing. It’s a cross between ice cream and traditional shaved ice desserts. Snow ice isn't heavy like ice cream, it features soft ribbons of flavored ice then topped with various coconut jelly, sweet beans, and other dessert toppings."></div>
+                        <p>There are many, many dumpling restaurants in Kaohsiung. These are restaurants we recommend.</p>
+                        <p onclick="foodsFunction()"><strong>Show/hide restaurants</strong></p>
+                        <div id="iceRestaurants">
+                            <p>restaurant 1</p>
+                            <p>restaurant 2</p>
+                            <p>restaurant 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="foodImage" style="background-image:url(media/tofu.jpg)" data-title="Stinky Tofu" data-text="Stinky tofu (Chinese: 臭豆腐; pinyin: chòudòufu) is a Chinese form of fermented tofu that has a strong odor. It is usually sold at night markets or roadside stands as a snack, or in lunch bars as a side dish, rather than in restaurants."></div>
+                        <p>There are many, many dumpling restaurants in Kaohsiung. These are restaurants we recommend.</p>
+                        <p onclick="foodsFunction()"><strong>Show/hide restaurants</strong></p>
+                        <div id="tofuRestaurants">
+                            <p>restaurant 1</p>
+                            <p>restaurant 2</p>
+                            <p>restaurant 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="foodImage" style="background-image:url(media/breakfast.jpg)" data-title="Taiwanese breakfast" data-text="The typical Taiwanese breakfast consists of a lot of carbs and egg. It's heavy and usually washed down by a hot glass of soymilk. "></div>
+                        <p>There are many, many dumpling restaurants in Kaohsiung. These are restaurants we recommend.</p>
+                        <p onclick="foodsFunction()"><strong>Show/hide restaurants</strong></p>
+                        <div id="breakfastRestaurants">
+                            <p>restaurant 1</p>
+                            <p>restaurant 2</p>
+                            <p>restaurant 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="places-to-stay">
+    <section id="places-to-stay" class="firstBackground">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -100,9 +147,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="map-places-to-stay">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -112,52 +156,53 @@
         </div>
     </section>
 
-    <section id="how-to-get-there" class="secondBackground">
-        <div class="container howToGetThere">
+    <section class="secondBackground" id="how-to-get-there">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <h2>How to get there</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 howToGetThere">
                 <div class="row">
-                    <h4>High Speed Rail</h4>
+                    <h3>High Speed Rail</h3>
                 </div>
                 <div class="row">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ab incidunt, nihil mollitia, laudantium recusandae libero, iure distinctio similique amet sed repudiandae fugiat odit. Alias molestias at omnis unde repellendus.</p>
+                    <p>Taiwan High Speed Rail has made Taiwan’s public transport system more convenient, because it brings cities and towns closer. Today, passengers can even travel between Taipei and Kaohsiung in one day. Along the “Western Corridor” of
+                        Taiwan are 12 THSR stations: Nangang, Taipei, Banqiao, Taoyuan, Hsinchu, Miaoli, Taichung, Changhua, Yunlin, Chiayi, Tainan and Zhuoying. Moving among the corridor’s stations at 300km per hour the fastest, THSR offers truly convenient
+                        rides.</p>
                     <img src="media/hsr.jpg" class="img-fluid" alt="High speed rail">
-                    <p>For more information on Taiwan's High Speed Rail, click <a href="https://www.thsrc.com.tw/index_en.html" target="_blank">here</a></p>
+                    <p>For more information on Taiwan's High Speed Rail, and to find fares and prizes, click <a href="https://www.thsrc.com.tw/index_en.html" target="_blank">here</a></p>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 howToGetThere">
                 <div class="row">
-                    <h4>Bus</h4>
+                    <h3>Bus</h3>
                 </div>
                 <div class="row">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ab incidunt, nihil mollitia, laudantium recusandae libero, iure distinctio similique amet sed repudiandae fugiat odit. Alias molestias at omnis unde repellendus.</p>
+                    <p>On the west coast there are very frequent departures (some 24-hour operations), with midweek and late-evening discounts. Most companies serve the same west-coast routes. The main transit points are Taipei, Taichung, Tainan and Kaohsiung.</p>
                     <img src="media/bus.jpg" class="img-fluid" alt="Bus">
-                    <div class="col-12">
-                        <p>For more information on Taiwan's bus system, click <a href="https://www.taiwanbus.tw/ByBus.aspx?Lang=En" target="_blank">here</a></p>
-                    </div>
+                    <p>For more information on Taiwan's bus system, and to find bus schedules click <a href="https://www.taiwanbus.tw/ByBus.aspx?Lang=En" target="_blank">here</a></p>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 howToGetThere">
                 <div class="row">
-                    <h4>Train</h4>
+                    <h3>Train</h3>
                 </div>
                 <div class="row">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ab incidunt, nihil mollitia, laudantium recusandae libero, iure distinctio similique amet sed repudiandae fugiat odit. Alias molestias at omnis unde repellendus.</p>
+                    <p>Taiwan Railway Administration has an extensive system running along both the east and west coasts. There are no services into the Central Mountains, except tourism branch lines. Trains are comfortable, clean,
+                        safe and reliable, with few delays. Reserved seating is available, and food and snacks are served. All major cities are connected by train. For fares and timetables, see the TRA website.</p>
                     <img src="media/train.jpg" class="img-fluid" alt="Train">
-                    <p>For more information on Taiwan's train system, click <a href="http://twtraffic.tra.gov.tw/twrail/EN_QuickSearch.aspx" target="_blank">here</a></p>
+                    <p>For more information on Taiwan's train system, and to find fares, click <a href="http://twtraffic.tra.gov.tw/twrail/EN_QuickSearch.aspx" target="_blank">here</a></p>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 howToGetThere">
                 <div class="row">
-                    <h4>Plane</h4>
+                    <h3>Plane</h3>
                 </div>
                 <div class="row">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ab incidunt, nihil mollitia, laudantium recusandae libero, iure distinctio similique amet sed repudiandae fugiat odit. Alias molestias at omnis unde repellendus.</p>
+                    <p>Kaohsiung international airport is an international airport. It only offers flights within Asia. It's convenient to reach from China and Japan.</p>
                     <img src="media/airport.jpg" class="img-fluid" alt="Plane">
                     <p>For more information on flights going to and leaving Kaoshiung airport, click <a href="https://www.kia.gov.tw/English/" target="_blank">here</a></p>
                 </div>
@@ -168,7 +213,9 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+            <p class="m-0 text-center text-white">Copyright Ivar Saris 2019; this website is created for educational purposes, I don't own the copyright to any of the images. Please visit my Github and LinkedIn page to get to know me a little bit and contact me if you would like to colaborate.
+                <a href="https://www.linkedin.com/in/ivar-saris-100bb481/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ivarsaris" target="_blank"><i class="fab fa-github-square"></i></a></p>
         </div>
         <!-- /.container -->
     </footer>
@@ -178,7 +225,45 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-
+    
+    <!--foods function-->
+    <script>
+        function foodsFunction() {
+            
+            // dumpling restaurants
+            var x = document.getElementById("dumplingRestaurants");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            
+            // snow ice restaurants
+            var y = document.getElementById("iceRestaurants");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
+            } 
+            
+            // stinky tofu restaurants
+            var z = document.getElementById("tofuRestaurants");
+            if (z.style.display === "block") {
+                z.style.display = "none";
+            } else {
+                z.style.display = "block";
+            }
+            
+            // breakfast restaurants
+            var q = document.getElementById("breakfastRestaurants");
+            if (q.style.display === "block") {
+                q.style.display = "none";
+            } else {
+                q.style.display = "block";
+            }
+        }
+    </script>
+    
     <!-- maps -->
     <script>
         function initMap() {
