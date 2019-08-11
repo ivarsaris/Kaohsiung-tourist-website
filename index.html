@@ -50,12 +50,15 @@
         </div>
     </nav>
 
-    <section class="secondBackground">
-        <div class="container welcome">
-            <img src="media/kaohsiung.jpg"></img>
-            <div class="titleText">
-                <h1>Kaohsiung</h1>
-                <p>The city of love</p>
+    <section class="secondBackground" id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <div class="titleText">
+                        <h1>Kaohsiung</h1>
+                        <p>The city of love</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -63,9 +66,10 @@
     <section class="firstBackground" id="things-to-do">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <h2>Things to do</h2>
-                    <p class="lead">There are many things to do in Kaoshiung. From hiking in the beautiful monkey mountain to sniffing culture at the Fo Guang Shan Buddha memorial center. On the map you will find our 11 most recommended activities and places to visit
+                <div class="col-12">
+                    <h2 class="sectionTitle">Things to do</h2>
+                    <hr class="hr1">
+                    <p class="sectionIntro">There are many things to do in Kaoshiung. From hiking in the beautiful monkey mountain to sniffing culture at the Fo Guang Shan Buddha memorial center. On the map you will find our 11 most recommended activities and places to visit
                         when staying in Kaohsiung.</p>
                 </div>
             </div>
@@ -74,6 +78,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div id="mapThings"></div>
+                    <input type="checkbox" name="filter" id="nature" class='chk-btn'>
+                    <label for='nature'>Nature</label>
+                    <input type="checkbox" name="filter" id="culture" class='chk-btn'>
+                    <label for='culture'>Culture</label>
                 </div>
                 <div class="col-md-6">
                     <h6>Pier2 Art Center</h6>
@@ -119,10 +127,15 @@
     <section class="secondBackground" id="foods-to-eat">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 foodsToEat">
-                    <h2>Foods to eat</h2>
-                    <p>Taiwan is heaven for foodies. There are many dishes that are worth trying, from street food to fancy restaurants. There are four foods I feel everyone should try when visiting Kaohsiung.</p>
+                <div class="col-12">
+                    <h2 class="sectionTitle">Foods to eat</h2>
+                    <hr class="hr2">
+                    <p class="sectionIntro">Taiwan is heaven for foodies. There are many dishes that are worth trying, from street food to fancy restaurants. There are four foods I feel everyone should try when visiting Kaohsiung.</p>
                 </div>
+            </div>
+        </div>
+        <div class="container foodsToEat">
+            <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="row">
                         <div class="foodImage" style="background-image:url(media/dumplings.jpg)" data-title="Dumplings" data-text="sometimesDumpling is a broad classification for a dish that consists of pieces of dough (made from a variety of starch sources) 
@@ -130,7 +143,7 @@
                         including baking, boiling, frying, simmering, or steaming, and are found in many world cuisines."></div>
                     </div>
                     <div class="row">
-                        <p onclick="dumplingRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                        <p class="showRestaurants" onclick="dumplingRestFunction()"><strong>&#9657 Show restaurants</strong></p>
                     </div>
                     <div class="row" id="dumplingRestaurants">
                         <p>Din Tai Fung Kaohsiung Store, B1, No.777 Bo'ai Er Road, Kaohsiung</p>
@@ -145,7 +158,7 @@
                         Snow ice isn't heavy like ice cream, it features soft ribbons of flavored ice then topped with various coconut jelly, sweet beans, and other dessert toppings."></div>
                     </div>
                     <div class="row">
-                        <p onclick="iceRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                        <p class="showRestaurants" onclick="iceRestFunction()"><strong>&#9657 Show restaurants</strong></p>
                     </div>
                     <div class="row" id="iceRestaurants">
                         <p>Bingo snowice, No.76, Liuhe 2nd Rd.,, Xinxing District, Kaohsiung 800</p>
@@ -160,7 +173,7 @@
                         It is usually sold at night markets or roadside stands as a snack, or in lunch bars as a side dish, rather than in restaurants."></div>
                     </div>
                     <div class="row">
-                        <p onclick="tofuRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                        <p class="showRestaurants" onclick="tofuRestFunction()"><strong>&#9657 Show restaurants</strong></p>
                     </div>
                     <div class="row" id="tofuRestaurants">
                         <p>Jiang Hao Ji Stinky Tofu King, No. 40, Minsheng 2nd Rd., Xinxing Dist, Kaohsiung</p>
@@ -174,7 +187,7 @@
                         <div class="foodImage" style="background-image:url(media/breakfast.jpg)" data-title="Taiwanese breakfast" data-text="The typical Taiwanese breakfast consists of a lot of carbs and egg. It's heavy and usually washed down by a hot glass of soymilk. "></div>
                     </div>
                     <div class="row">
-                        <p onclick="breakfastRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                        <p class="showRestaurants" onclick="breakfastRestFunction()"><strong>&#9657 Show restaurants</strong></p>
                     </div>
                     <div class="row" id="breakfastRestaurants">
                         <p>Xinglongju, No.186 Liuhe Second Road, Kaohsiung</p>
@@ -189,9 +202,10 @@
     <section id="places-to-stay" class="firstBackground">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <h2>Places to stay</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                <div class="col-12">
+                    <h2 class="sectionTitle">places to stay</h2>
+                    <hr class="hr1">
+                    <p class="sectionIntro">Many hotels in Kaohsiung bla bla bla</p>
                 </div>
             </div>
         </div>
@@ -207,11 +221,14 @@
     <section class="secondBackground" id="how-to-get-there">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <h2>How to get there</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                <div class="col-12">
+                    <h2 class="sectionTitle">How to get there</h2>
+                    <hr class="hr2">
+                    <p class="sectionIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div class="col-12 col-md-6 howToGetThere">
                 <div class="row">
                     <h3>High Speed Rail</h3>
@@ -221,7 +238,11 @@
                         Taiwan are 12 THSR stations: Nangang, Taipei, Banqiao, Taoyuan, Hsinchu, Miaoli, Taichung, Changhua, Yunlin, Chiayi, Tainan and Zhuoying. Moving among the corridor’s stations at 300km per hour the fastest, THSR offers truly convenient
                         rides.
                     </p>
+                </div>
+                <div class="row">
                     <img src="media/hsr.jpg" class="img-fluid" alt="High speed rail">
+                </div>
+                <div class="row">
                     <p>For more information on Taiwan's High Speed Rail, and to find fares and prizes, click <a href="https://www.thsrc.com.tw/index_en.html" target="_blank">here</a></p>
                 </div>
             </div>
@@ -258,11 +279,10 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright Ivar Saris 2019; this website is created for educational purposes, I don't own the copyright to any of the images. Please visit my Github and LinkedIn page to get to know me a little bit and contact me if you would like to colaborate.
+            <p class="m-0 text-center text-white">Copyright Ivar Saris 2019; this website is created for educational purposes, I don't own the rigths to any of the images. Please visit my Github and LinkedIn page to get to know me a little bit and contact me if you would like to colaborate.
                 <a href="https://www.linkedin.com/in/ivar-saris-100bb481/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/ivarsaris" target="_blank"><i class="fab fa-github-square"></i></a></p>
         </div>
@@ -277,10 +297,10 @@
 
     <!--foods script -->
     <script src="js/restaurant-dropdown.js"></script>
-    
+
     <!-- maps script -->
     <script src="js/maps.js"></script>
-    
+
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
     <!--Things to do Google Maps script-->

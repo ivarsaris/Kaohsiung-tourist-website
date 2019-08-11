@@ -91,11 +91,23 @@ function initMap() {
             infoWindow.open(mapThings, marker);
         });
     }
+    filterMarkers = function (category) {
+    for (i = 0; i < markers.length; i++) {
+        marker = markers[i];
+        // If is same category or category not picked
+        if (marker.category == category) {
+            marker.setVisible(true);
+        }
+        // Categories don't match 
+        else {
+            marker.setVisible(false);
+        }
+    }
+}
     
     
     
-    
-    
+
 
     // map places to stay
     var mapPlaces = new google.maps.Map(document.getElementById("mapPlaces"), {
