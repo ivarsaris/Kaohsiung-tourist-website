@@ -1,16 +1,7 @@
 /*general styling*/
 
 body {
-  font-size: 1.7rem;
-  font-family: helvetica;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 section {
@@ -52,23 +43,12 @@ section {
 
 /*navbar*/
 
-.navbar-expand {
+.navbar {
+  position: fixed;
+}
+
+.navbar-expand .navbar-collapse {
   display: block;
-  flex-basis: auto;
-}
-
-.navbar-collapse {
-  display: block;
-}
-
-.navbar-nav {
-  display: contents;
-}
-
-@media screen and (max-width: 576px) {
-  .navbar {
-    display: none;
-  }
 }
 
 /*welcome image with text */
@@ -122,7 +102,6 @@ section {
 /* food images with sliding text. Concept taken from 
 https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s, 
 adapted to this webpage */
-
 .foodColumn {
   display: block;
 }
@@ -130,7 +109,6 @@ adapted to this webpage */
 .foodColumn p {
   text-align: left;
 }
-
 .foodImage {
   display: block;
   margin-left: auto;
@@ -237,7 +215,7 @@ not showing the restaurants when loading the page*/
 .howToGetThere {
   text-align: left;
   height: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .howToGetThere h3 {
@@ -254,28 +232,22 @@ not showing the restaurants when loading the page*/
   position: relative;
   width: 400px;
   height: 300px;
-  max-width: 90%;
+  max-width: 100%;
   max-height: auto;
   float: left;
 }
 
 .howToGetThere p {
   text-align: justify;
-  max-width: 90%;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   .howToGetThere p {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 980px) {
-  .howToGetThere {
-    height: 620px;
   }
 }
