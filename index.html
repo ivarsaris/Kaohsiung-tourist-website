@@ -310,23 +310,25 @@
                         and tricks on how to get around in Kaohsiung and how to experience local life.</p>
                 </div>
                 <div class="center-form">
-                    <form onsubmit="return sendMail(this);" method="POST">
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" class="form" id="name" placeholder="Name" required/>
                         <input type="text" name="email" class="form" id="email" placeholder="Email address" required/>
                         <input type="text" name="phone" class="form" id="phoneNumber" placeholder="Phone number" required/>
                         <label for="days" class="formtext">How many days are you planning to stay in Kaohsiung?</label>
                         <select name="days" class="form" required>
+                            <option value="choose">choose</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option>
                             <option value="7">7</option>
+                            <option value="longer">longer than 7 days</option>
                         </select>
                         <input type="text" name="travelingFrom" class="form" id "travelingFrom" placeholder="Traveling to Kaohsiung from" required/>
                         <input type="text" name="budget" class="form" id="budget" placeholder="Budget(in US$)" />
                         <label for="message" class="formtext">Comments or message for us</label>
                         <textarea name="message" class="form" rows="3" cols="40"></textarea>
-                        <input type="submit" value="Submit" class="formtext" />
+                        <input type="submit" value="Submit" class="formtext"/>
                     </form>
                 </div>
             </div>
@@ -363,6 +365,7 @@
     <!-- places to stay Google maps scripts -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcJNIJdSyMYCmen-e466Vn0Ysq36-CelU&callback=initMap"></script>
     
+    <!--contact form send email script-->
     <script src="js/email.js"></script>
 </body>
 
