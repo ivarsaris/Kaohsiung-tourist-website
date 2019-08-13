@@ -122,6 +122,14 @@ section {
   max-width: 100%;
 }
 
+.showThings {
+  cursor: pointer;
+}
+
+
+/*on display none so the toggle function starts with 
+not showing the restaurants when loading the page*/
+
 #lotus {
   display: none;
 }
@@ -345,4 +353,16 @@ not showing the restaurants when loading the page*/
   .howToGetThere {
     height: 620px;
   }
+}
+
+/*contact form*/
+
+.form {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border: 2px solid #7a93b2;
+  border-radius: 4px;
+  box-sizing: border-box;
 }

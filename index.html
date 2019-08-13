@@ -45,6 +45,9 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#how-to-get-there">How to get there</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#custom-holiday">Your holiday</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -84,17 +87,17 @@
                     <label for='culture'>Culture</label>
                 </div>
                 <div class="col-md-6">
-                    <h6 class="showRestaurants" onclick="pierFunction()">&#9657 Pier2 Art Center</h6>
+                    <h6 class="showThings" onclick="pierFunction()">&#9657 Pier2 Art Center</h6>
                     <div class="row" id="pier">
                         <p>The arts center was originally an abandoned warehouse site due to Kaohsiung's shift from industrial city to service city. Due to the persistence of local artists, the area was finally released and remade to be an arts center.</p>
                     </div>
 
-                    <h6 class="showRestaurants" onclick="lotusFunction()">&#9657 lotus lake</h6>
+                    <h6 class="showThings" onclick="lotusFunction()">&#9657 lotus lake</h6>
                     <div class="row" id="lotus">
                         <p>Lotus lake is an artificial lake and popular tourist destination on the east side of Zuoying District in Kaohsiung. Opened in 1951, it is famous for the lotus plants on the lake and the numerous temples around the lake.</p>
                     </div>
 
-                    <h6 class="showRestaurants" onclick="qijinFunction()">&#9657 qijin</h6>
+                    <h6 class="showThings" onclick="qijinFunction()">&#9657 qijin</h6>
                     <div class="row" id="qijin">
                         <p>Qijin district is reached by ferry. It's home to many delicasy stores and tourist attractions such as Chi Jin Mazu Temple, Cihou forst, Cijin wind turbine park etc.</p>
                     </div>
@@ -142,7 +145,7 @@
                         <p>Kaohsiung Exhibition Center hosts many expos. It has become a help to balance the economic development between the north and the south. </p>
                     </div>
 
-                    <h6 class="showThings" onclick="(artscentreFunction)">&#9657National Kaohsiung Centre for the Arts</h6>
+                    <h6 class="showThings" onclick="artscentreFunction()">&#9657National Kaohsiung Centre for the Arts</h6>
                     <div class="row" id="artscentre">
                         <p>National Kaohsiung Centre for the Arts is a performance arts centre. Many young people go here to dance, talk and hang out in the evening.</p>
                     </div>
@@ -306,6 +309,42 @@
             </div>
         </div>
     </section>
+    
+    <section class="firstBackground" id="custom-holiday">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                   <h2 class="sectionTitle">Your custom tailored holiday</h2>
+                    <hr class="hr1">
+                    <p class="sectionIntro">Planning on visiting Kaohsiung? Fill out the form below and we will send you a custom tailored holiday including
+                    the best way to get to Kaohsiung, activity packages and 
+                    recommended hotels and restaurants.  You will also receive tips and tricks
+                    on how to get around in Kaohsiung and how to experience local life.</p> 
+                </div>
+                <div class="center-form">
+                    <form>
+                        <input type="text" name="name" class="form" id="name" placeholder="Name" required/>
+                        <input type="text" name="email" class="form" id="email" placeholder="Email address" required/>
+                        <input type="text" name="phone" class="form" id="phoneNumber" placeholder="Phone number" required/>
+                        <label for="days">How many days are you planning to stay in Kaohsiung?</label>
+                        <select name="days" required>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <input type="text" name="travelingFrom" class="form" id"travelingFrom" placeholder="Where are you traveling to Kaohsiung from" required/>
+                        <input type="text" name="budget" class="form" id="budget" placeholder="Your budget(in US$)"/>
+                        <label for="message">Comments or message for us</label>
+                        <textarea name="message" class="form" rows="3" cols="40"></textarea>
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
@@ -323,7 +362,7 @@
     <script src="js/scrolling-nav.js"></script>
 
     <!--foods script -->
-    <script src="js/restaurant-dropdown.js"></script>
+    <script src="js/dropdowns.js"></script>
 
     <!-- maps script -->
     <script src="js/maps.js"></script>
