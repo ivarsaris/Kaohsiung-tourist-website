@@ -1,11 +1,29 @@
 /*general styling*/
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-family: helvetica;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 2rem;
 }
 
 section {
   padding: 50px 0;
+  text-align: justify;
 }
 
 .firstBackground {
@@ -43,12 +61,26 @@ section {
 
 /*navbar*/
 
-.navbar {
-  position: fixed;
+.navbar-expand {
+  display: block;
+  flex-basis: auto;
 }
 
-.navbar-expand .navbar-collapse {
+.navbar-collapse {
   display: block;
+}
+
+.navbar {
+  display: grid;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
 }
 
 /*welcome image with text */
@@ -57,7 +89,7 @@ section {
   background: url("../media/kaohsiung.jpg");
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
   float: left;
 }
@@ -74,12 +106,12 @@ section {
 
 @media screen and (max-width: 576px) {
   .titleText {
-    margin: 10%;
+    margin: 5%;
     padding: 5px;
   }
 }
 
-/*maps*/
+/*things to do*/
 
 #mapThings {
   width: 800px;
@@ -90,18 +122,76 @@ section {
   border: 5px solid #7a93b2;
 }
 
-#mapPlaces {
-  width: 800px;
-  height: 500px;
+#things-to-do p {
   max-width: 100%;
-  max-height: auto;
-  margin: auto;
-  border: 5px solid #7a93b2;
 }
+
+.showThings {
+  cursor: pointer;
+}
+
+
+/*on display none so the toggle function starts with 
+not showing the restaurants when loading the page*/
+
+#lotus {
+  display: none;
+}
+
+#liuhe {
+  display: none;
+}
+
+#qijin {
+  display: none;
+}
+
+#pier {
+  display: none;
+}
+
+#zoo {
+  display: none;
+}
+
+#ruifeng {
+  display: none;
+}
+
+#chaishan {
+  display: none;
+}
+
+#buddha {
+  display: none;
+}
+
+#monkey {
+  display: none;
+}
+
+#river {
+  display: none;
+}
+
+#exhibition {
+  display: none;
+}
+
+#artscentre {
+  display: none;
+}
+
+#beach {
+  display: none;
+}
+
+
 
 /* food images with sliding text. Concept taken from 
 https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s, 
 adapted to this webpage */
+
 .foodColumn {
   display: block;
 }
@@ -109,6 +199,7 @@ adapted to this webpage */
 .foodColumn p {
   text-align: left;
 }
+
 .foodImage {
   display: block;
   margin-left: auto;
@@ -117,7 +208,7 @@ adapted to this webpage */
   position: relative;
   width: 400px;
   height: 400px;
-  max-width: 100%;
+  max-width: 90%;
   max-height: auto;
   float: left;
   background-size: 100%;
@@ -190,7 +281,6 @@ adapted to this webpage */
   cursor: pointer;
 }
 
-
 /*on display none so the toggle function starts with 
 not showing the restaurants when loading the page*/
 
@@ -210,44 +300,81 @@ not showing the restaurants when loading the page*/
   display: none;
 }
 
+/*places to stay*/
+
+#mapPlaces {
+  width: 800px;
+  height: 500px;
+  max-width: 100%;
+  max-height: auto;
+  margin: auto;
+  border: 5px solid #7a93b2;
+}
+
 /*How to get there section*/
 
 .howToGetThere {
-  text-align: left;
-  height: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  text-align: justify;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .howToGetThere h3 {
-  text-align: justify;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .howToGetThere img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   width: 400px;
   height: 300px;
   max-width: 100%;
   max-height: auto;
-  float: left;
 }
 
-.howToGetThere p {
-  text-align: justify;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+
+
+@media screen and (min-width: 980px) {
+  .howToGetThere {
+    height: 620px;
+  }
+}
+
+/*contact form*/
+
+.form {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid #7a93b2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formtext {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #343a40c9;
+}
+
+@media screen and (max-width: 992px) {
+  .form, .formtext {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .howToGetThere p {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  .form, .formtext {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }

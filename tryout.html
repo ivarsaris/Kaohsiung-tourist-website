@@ -20,93 +20,50 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!--own CSS-->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/tryout.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
-    <section class="firstBackground" id="things-to-do">
+    <section class="secondBackground" id="how-to-get-there">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="sectionTitle">Things to do</h2>
-                    <hr class="hr1">
-                    <p class="sectionIntro">There are many things to do in Kaoshiung. From hiking in the beautiful monkey mountain to sniffing culture at the Fo Guang Shan Buddha memorial center. On the map you will find our 11 most recommended activities and places to visit
-                        when staying in Kaohsiung.</p>
+                    <h2 class="sectionTitle">How to get there</h2>
+                    <hr class="hr2">
+                    <p class="sectionIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div id="mapThings"></div>
-                    <input type="checkbox" name="filter" id="nature" class='chk-btn'>
-                    <label for='nature'>Nature</label>
-                    <input type="checkbox" name="filter" id="culture" class='chk-btn'>
-                    <label for='culture'>Culture</label>
+                <div class="col-12 col-md-6 howToGetThere">
+                    <h3>High Speed Rail</h3>
+                    <p>Taiwan High Speed Rail has made Taiwan’s public transport system more convenient, because it brings cities and towns closer. Today, passengers can even travel between Taipei and Kaohsiung in one day. Along the “Western Corridor” of
+                        Taiwan are 12 THSR stations: Nangang, Taipei, Banqiao, Taoyuan, Hsinchu, Miaoli, Taichung, Changhua, Yunlin, Chiayi, Tainan and Zhuoying. Moving among the corridor’s stations at 300km per hour the THSR offers truly convenient
+                        rides.
+                    </p>
+                    <img src="media/hsr.jpg" class="img-fluid" alt="High speed rail">
+                    <p>For more information on Taiwan's High Speed Rail, and to find fares and prizes, click <a href="https://www.thsrc.com.tw/index_en.html" target="_blank">here</a></p>
                 </div>
-                <div class="col-md-6">
-                    <h6 class="showRestaurants" onclick="pierFunction()">&#9657 Pier2 Art Center</h6>
-                    <div class="row" id="pier">
-                        <p>The arts center was originally an abandoned warehouse site due to Kaohsiung's shift from industrial city to service city. Due to the persistence of local artists, the area was finally released and remade to be an arts center.</p>
-                    </div>
-
-                    <h6 class="showRestaurants" onclick="lotusFunction()">&#9657 lotus lake</h6>
-                    <div class="row" id="lotus">
-                        <p>Lotus lake is an artificial lake and popular tourist destination on the east side of Zuoying District in Kaohsiung. Opened in 1951, it is famous for the lotus plants on the lake and the numerous temples around the lake.</p>
-                    </div>
-
-                    <h6 class="showRestaurants" onclick="qijinFunction()">&#9657 qijin</h6>
-                    <div class="row" id="qijin">
-                        <p>Qijin district is reached by ferry. It's home to many delicasy stores and tourist attractions such as Chi Jin Mazu Temple, Cihou forst, Cijin wind turbine park etc.</p>
-                    </div>
-
-
-                    <h6 class="showThings" onclick="zooFunction()">&#9657Shou Shan viewpoint and zoo</h6>
-                    <div class="row" id="zoo">
-                        <p>Shou Shan Zoo houses animals from Asia, Africa, Americas and Australia, such as lions, tigers, elephants, black bears and kangaroos. Next to the zoo is a viewpoint from where the whole city of Kaohsiung can be seen. Many couples
-                            go here to take pictures.</p>
-                    </div>
-
-                    <h6 class="showThings" onclick="ruifengFunction()">&#9657Ruifeng Night Market</h6>
-                    <div class="row" id="ruifeng">
-                        <p>The night market holds more than thousand stalls with variety, which are mostly food vendors, small eateries also the surrounding businesses of selling non-food items such as accessories or fashion apparel.</p>
-                    </div>
-
-                    <h6 class="showThings" onclick="liuheFunction()">&#9657Liuhe Night Market</h6>
-                    <div class="row" id="liuhe">
-                        <p>Liuhe Night Market is one of the most popular markets in Taiwan where seafood, handicrafts, clothing, knives, cameras and live animals are sold</p>
-                    </div>
-
-                    <h6 class="showThings" onclick="beachFunction()">&#9657Chaishan Secret Beach</h6>
-                    <div class="row" id="beach">
-                        <p>Chaishan secret beach is a small beach which can be reached by taking a small hike down a steap hill. It's usually very quiet there and it's a wonderful place to relax.</p>
-                    </div>
-
-                    <h6 class="showThings" onclick="buddhaFunction()">&#9657Fo Guang Shan Buddha Memorial Center</h6>
-                    <div class="row" id="buddha">
-                        <p>Fo Guang Shan Buddha Memorial Center is a Mahayana Buddhist cultural, religious and educational museum. The museum is affiliated with Fo Guang Shan, one of Taiwan's largest Buddhist organizations.</p>
-                    </div>
-
-                    <h6 class="showThings" onclick="riverFunction()">&#9657Love river</h6>
-                    <div class="row" id="river">
-                        <p>Love river runs all the way through Kaohsiung. Next to the river are many small parks.</p>
-                    </div>
-
-                    <h6 class="showThings" onclick="monkeyFunction()">&#9657Chai Shan(monkey mountain)</h6>
-                    <div class="row" id="monkey">
-                        <p>Shoushan is the one of the mountains where Kaohsiung residents can see natural biological specimens within an hour's drive. There is an extensive system of boardwalk hiking trails that circle the mountain. Hikers can enjoy tea
-                            at various tea stations sprinkled throughout the trails.</p>
-                    </div>
-
-                    <h6 class="showThings" onclick="exhibitionFunction()">&#9657Kaohsiung Exhibition Center</h6>
-                    <div class="row" id="exhibition">
-                        <p>Kaohsiung Exhibition Center hosts many expos. It has become a help to balance the economic development between the north and the south. </p>
-                    </div>
-
-                    <h6 class="showThings" onclick="(artscentreFunction)">&#9657National Kaohsiung Centre for the Arts</h6>
-                    <div class="row" id="artscentre">
-                        <p>National Kaohsiung Centre for the Arts is a performance arts centre. Many young people go here to dance, talk and hang out in the evening.</p>
-                    </div>
+                <div class="col-12 col-md-6 howToGetThere">
+                    <h3>Train</h3>
+                    <p>Taiwan Railway Administration has an extensive system running along both the east and west coasts. There are no services into the Central Mountains, except tourism branch lines. Trains are comfortable, clean, safe and reliable, with
+                        few delays. Reserved seating is available, and food and snacks are served. All major cities are connected by train. For fares and timetables, see the TRA website.</p>
+                    <img src="media/train.jpg" class="img-fluid" alt="Train">
+                    <p>For more information on Taiwan's train system, and to find fares, click <a href="http://twtraffic.tra.gov.tw/twrail/EN_QuickSearch.aspx" target="_blank">here</a></p>
+                </div>
+                <div class="col-12 col-md-6 howToGetThere">
+                    <h3>Bus</h3>
+                    <p>On the west coast there are very frequent departures (some 24-hour operations), with midweek and late-evening discounts. Most companies serve the same west-coast routes. The main transit points are Taipei, Taichung, Tainan and Kaohsiung.
+                    </p>
+                    <img src="media/bus.jpg" class="img-fluid" alt="Bus">
+                    <p>For more information on Taiwan's bus system, and to find bus schedules click <a href="https://www.taiwanbus.tw/ByBus.aspx?Lang=En" target="_blank">here</a></p>
+                </div>
+                <div class="col-12 col-md-6 howToGetThere">
+                    <h3>Plane</h3>
+                    <p>Kaohsiung international airport is an international airport. It only offers flights within Asia. It's convenient to reach from China and Japan.</p>
+                    <img src="media/airport.jpg" class="img-fluid" alt="Plane">
+                    <p>For more information on flights going to and leaving Kaoshiung airport, click <a href="https://www.kia.gov.tw/English/" target="_blank">here</a></p>
                 </div>
             </div>
         </div>
@@ -239,7 +196,7 @@
                 x.style.display = "block";
             }
         }
-        
+
         function artsCentreFunction() {
             var x = document.getElementById("artsCentre");
             if (x.style.display === "block") {
