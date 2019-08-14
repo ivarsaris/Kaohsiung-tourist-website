@@ -1,164 +1,49 @@
-// dumpling restaurants
-function dumplingRestFunction() {
-    var x = document.getElementById("dumplingRestaurants");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+// show and hide panel and marker according to point-of-interest
+function panelAndMarkerVisibility(poi) {
+    // hide all info windows of mapThings 
+    hideAllInfoWindows();
+    
+    // get div with things to do content
+    var div = document.getElementById(poi);
+    
+    // if div is visible
+    if (div.style.display === "block") {
+        // hide div
+        div.style.display = "none";
     }
     else {
-        x.style.display = "block";
-    }
-}
-// snow ice restaurants
-function iceRestFunction() {
-    var x = document.getElementById("iceRestaurants");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-// stinky tofu restaurants
-function tofuRestFunction() {
-    var x = document.getElementById("tofuRestaurants");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-// breakfast restaurants
-function breakfastRestFunction() {
-    var x = document.getElementById("breakfastRestaurants");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
+        // show div
+        div.style.display = "block";
+        // iterate through all the markers of mapThings
+        markersThings.forEach(function(marker) {
+            // if the marker is the point-of-interest the user clicked
+            if (marker.id === poi) {
+                // fire click event to show info window
+                google.maps.event.trigger(marker.mapsMarker, 'click');
+            }
+        })
+        
     }
 }
 
 
-// things to do dropdowns
-function lotusFunction() {
-    var x = document.getElementById("lotus");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+// when the DOM is loaded and rendered (HTML is rendered)
+document.addEventListener("DOMContentLoaded", function(event) {
+    
+    // get all elements with classname 'showThings' -> should be all H6 things to do
+    var activityItems = document.getElementsByClassName('showThings');
+    
+    // iterate through all activity items
+    for (var i = 0; i < activityItems.length; i++) {
+        
+        // add a click event listener to each item
+        activityItems[i].addEventListener('click', function() {
+            
+            // retrieve the data-poi attribute value
+            var poi = this.dataset.poi;
+            
+            // show or hide panel and marker 
+            panelAndMarkerVisibility(poi);
+        })
     }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function qijinFunction() {
-    var x = document.getElementById("qijin");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function pierFunction() {
-    var x = document.getElementById("pier");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function zooFunction() {
-    var x = document.getElementById("zoo");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function ruifengFunction() {
-    var x = document.getElementById("ruifeng");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function buddhaFunction() {
-    var x = document.getElementById("buddha");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function liuheFunction() {
-    var x = document.getElementById("liuhe");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function beachFunction() {
-    var x = document.getElementById("beach");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function riverFunction() {
-    var x = document.getElementById("river");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function monkeyFunction() {
-    var x = document.getElementById("monkey");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function exhibitionFunction() {
-    var x = document.getElementById("exhibition");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
-
-function artscentreFunction() {
-    var x = document.getElementById("artscentre");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
+});
