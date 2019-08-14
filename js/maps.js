@@ -76,6 +76,7 @@ var markersThings = [{
     },
 ];
 
+// show or hide category function
 function showHideCategory(category, visibility) {
     for (var i = 0; i < markersThings.length; i++) {
         // If is same category or category not picked
@@ -102,6 +103,7 @@ function addMarker(properties) {
         marker.infoWindow.open(mapThings, marker);
     });
     
+    // return marker after adding
     return marker;
 }
 
@@ -113,12 +115,7 @@ function hideAllInfoWindows() {
   }); 
 }
 
-
 // callback function for goole maps api
-// initiate mapThings and mapPlaces (....)
-// add markers to the mapThings
-// add event listeners to filterThings checkboxes for hiding and showing markers based on a certain category
-
 function initMap() {
     // map things to do
     mapThings = new google.maps.Map(document.getElementById("mapThings"), {
@@ -140,9 +137,11 @@ function initMap() {
 
     //iterate through array of markers
     for (var i = 0; i < markersThings.length; i++) {
+        // add markers to the mapThings
         markersThings[i].mapsMarker = addMarker(markersThings[i]);
     }
     
+    // filterThings checkboxes for hiding and showing markers of a certain category
     var checkboxes = document.getElementsByName("filterThings");
     
     // Iterate through all checkboxes 

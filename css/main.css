@@ -284,19 +284,7 @@ adapted to this webpage */
 /*on display none so the toggle function starts with 
 not showing the restaurants when loading the page*/
 
-#dumplingRestaurants {
-  display: none;
-}
-
-#iceRestaurants {
-  display: none;
-}
-
-#tofuRestaurants {
-  display: none;
-}
-
-#breakfastRestaurants {
+.showRestaurants {
   display: none;
 }
 

@@ -180,9 +180,9 @@
                         including baking, boiling, frying, simmering, or steaming, and are found in many world cuisines."></div>
                     </div>
                     <div class="row">
-                        <p class="showRestaurants" onclick="dumplingRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                        <p onclick="showRestaurantsFunction()"><strong>&#9657 Show restaurants</strong></p>
                     </div>
-                    <div class="row" id="dumplingRestaurants">
+                    <div class="row showRestaurants">
                         <p>Din Tai Fung Kaohsiung Store, B1, No.777 Bo'ai Er Road, Kaohsiung</p>
                         <p>Yonghe Steamed Dumpling, No. 33, Yancheng St., Yancheng Dist, Kaohsiung</p>
                         <p>Hou de Fu Steamed Dumpling, No. 156, Ziqiang 3rd Rd., Lingya Dist, Kaohsiung</p>
@@ -195,9 +195,9 @@
                         Snow ice isn't heavy like ice cream, it features soft ribbons of flavored ice then topped with various coconut jelly, sweet beans, and other dessert toppings."></div>
                     </div>
                     <div class="row">
-                        <p class="showRestaurants" onclick="iceRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                        <p onclick="showRestaurantsFunction()"><strong>&#9657 Show restaurants</strong></p>
                     </div>
-                    <div class="row" id="iceRestaurants">
+                    <div class="row showRestaurants">
                         <p>Bingo snowice, No.76, Liuhe 2nd Rd.,, Xinxing District, Kaohsiung 800</p>
                         <p>Gao Xiong Po Po Shaved Ice, No. 135, Qixian 3rd Rd., Yancheng Dist, Kaohsiung</p>
                         <p>Mang Guo Hao Mang, No.401, Fumin RD, Zuoying Dist, Kaohsiung 813</p>
@@ -210,9 +210,9 @@
                         It is usually sold at night markets or roadside stands as a snack, or in lunch bars as a side dish, rather than in restaurants."></div>
                     </div>
                     <div class="row">
-                        <p class="showRestaurants" onclick="tofuRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                        <p onclick="showRestaurantsFunction()"><strong>&#9657 Show restaurants</strong></p>
                     </div>
-                    <div class="row" id="tofuRestaurants">
+                    <div class="row showRestaurants">
                         <p>Jiang Hao Ji Stinky Tofu King, No. 40, Minsheng 2nd Rd., Xinxing Dist, Kaohsiung</p>
                         <p>Fu Ji Stinky Tofu, No. 117-7, Wufu 3rd Rd., Lingya Dist, Kaohsiung</p>
                         <p>Lu Family Stinky Tofu King, No. 253, Zhonghua 3rd Rd, Sanmin Dist, Kaohsiung</p>
@@ -224,9 +224,9 @@
                         <div class="foodImage" style="background-image:url(media/breakfast.jpg)" data-title="Taiwanese breakfast" data-text="The typical Taiwanese breakfast consists of a lot of carbs and egg. It's heavy and usually washed down by a hot glass of soymilk. "></div>
                     </div>
                     <div class="row">
-                        <p class="showRestaurants" onclick="breakfastRestFunction()"><strong>&#9657 Show restaurants</strong></p>
+                        <p onclick="showRestaurantsFunction()"><strong>&#9657 Show restaurants</strong></p>
                     </div>
-                    <div class="row" id="breakfastRestaurants">
+                    <div class="row showRestaurants">
                         <p>Xinglongju, No.186 Liuhe Second Road, Kaohsiung</p>
                         <p>Lao Jiang Milk Black Tea, No. 214-3, Sanduo 3rd Rd., Lingya Dist, Kaohsiung</p>
                         <p>Chuan He Beef Noodles, No. 306, Jiangong Rd., Sanmin Dist, Kaohsiung</p>
@@ -353,9 +353,12 @@
     <!-- maps script -->
     <script src="js/maps.js"></script>
 
-    <!--foods script -->
+    <!--maps dropdown and filter script -->
     <script src="js/dropdowns.js"></script>
-
+    
+    <!--restaurant dropdown script-->
+    <script src="js/restaurantdropdowns.js"></script>
+    
     <!-- Google Maps script-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6mj1_xGfgwcSZCgynF5582WAzSvfQIWs&callback=initMap"></script>
 

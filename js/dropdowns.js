@@ -1,5 +1,5 @@
 // show and hide panel and marker according to point-of-interest
-function panelAndMarkerVisibility(poi) {
+function showPanelAndMarker(poi) {
     // hide all info windows of mapThings 
     hideAllInfoWindows();
     
@@ -21,16 +21,15 @@ function panelAndMarkerVisibility(poi) {
                 // fire click event to show info window
                 google.maps.event.trigger(marker.mapsMarker, 'click');
             }
-        })
+        });
         
     }
 }
 
-
 // when the DOM is loaded and rendered (HTML is rendered)
 document.addEventListener("DOMContentLoaded", function(event) {
     
-    // get all elements with classname 'showThings' -> should be all H6 things to do
+    // get all elements with class 'showThings'
     var activityItems = document.getElementsByClassName('showThings');
     
     // iterate through all activity items
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var poi = this.dataset.poi;
             
             // show or hide panel and marker 
-            panelAndMarkerVisibility(poi);
-        })
+            showPanelAndMarker(poi);
+        });
     }
 });
