@@ -126,15 +126,6 @@ function initMap() {
         }
     });
 
-    // map places to stay
-    mapPlaces = new google.maps.Map(document.getElementById("mapPlaces"), {
-        zoom: 8,
-        center: {
-            lat: 22.652951,
-            lng: 120.342845
-        }
-    });
-
     //iterate through array of markers
     for (var i = 0; i < markersThings.length; i++) {
         // add markers to the mapThings
