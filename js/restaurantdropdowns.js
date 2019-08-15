@@ -16,7 +16,8 @@
       restaurants.style.display = "block";
      }
     }
-   }
+   });
+ }
 
   // function showRestaurantsFunction(restaurants) {
 

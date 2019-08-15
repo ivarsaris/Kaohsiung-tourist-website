@@ -277,7 +277,7 @@ adapted to this webpage */
   max-width: 100%;
 }
 
-.showRestaurants {
+.restaurantDropdown {
   cursor: pointer;
 }
 
@@ -290,14 +290,6 @@ not showing the restaurants when loading the page*/
 
 /*places to stay*/
 
-#mapPlaces {
-  width: 800px;
-  height: 500px;
-  max-width: 100%;
-  max-height: auto;
-  margin: auto;
-  border: 5px solid #7a93b2;
-}
 
 /*How to get there section*/
 
@@ -322,12 +314,19 @@ not showing the restaurants when loading the page*/
   max-height: auto;
 }
 
-
-
 @media screen and (min-width: 980px) {
   .howToGetThere {
     height: 620px;
   }
+}
+
+.howToGetThere a, .howToGetThere a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.howToGetThere a:hover {
+  color: #343a40;
 }
 
 /*contact form*/
@@ -365,4 +364,17 @@ not showing the restaurants when loading the page*/
     margin-left: 5%;
     margin-right: 5%;
   }
+}
+
+/*footer*/
+footer {
+  color: rgba(255,255,255,.5);
+}
+
+footer a, footer a:visited {
+  color: rgba(255,255,255,.5);
+}
+
+footer a:hover {
+  color: #fff;
 }
