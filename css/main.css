@@ -18,7 +18,7 @@ h3 {
 }
 
 h6 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 section {
@@ -134,55 +134,7 @@ section {
 /*on display none so the toggle function starts with 
 not showing the restaurants when loading the page*/
 
-#lotus {
-  display: none;
-}
-
-#liuhe {
-  display: none;
-}
-
-#qijin {
-  display: none;
-}
-
-#pier {
-  display: none;
-}
-
-#zoo {
-  display: none;
-}
-
-#ruifeng {
-  display: none;
-}
-
-#chaishan {
-  display: none;
-}
-
-#buddha {
-  display: none;
-}
-
-#monkey {
-  display: none;
-}
-
-#river {
-  display: none;
-}
-
-#exhibition {
-  display: none;
-}
-
-#artscentre {
-  display: none;
-}
-
-#beach {
+.activity{
   display: none;
 }
 
@@ -191,6 +143,22 @@ not showing the restaurants when loading the page*/
 /* food images with sliding text. Concept taken from 
 https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s, 
 adapted to this webpage */
+
+.dumpling {
+  background-image: url(../media/dumplings.jpg);
+}
+
+.snowIce {
+  background-image: url(../media/ice.jpeg);
+}
+
+.tofu {
+  background-image: url(../media/tofu.jpg);
+}
+
+.breakfast {
+  background-image: url(../media/breakfast.jpg);
+}
 
 .foodColumn {
   display: block;
@@ -376,5 +344,5 @@ footer a, footer a:visited {
 }
 
 footer a:hover {
-  color: #fff;
+  color: rgba(255,255,255,.75);
 }
