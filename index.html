@@ -64,7 +64,8 @@
     <section class="secondBackground" id="welcome">
         <div class="container">
             <div class="row">
-                <div class="title">
+                <!--background picture-->
+                <div class="title"> 
                     <div class="titleText">
                         <h1>Kaohsiung</h1>
                         <p>The city of love</p>
@@ -80,7 +81,7 @@
                 <div class="col-12">
                     <h2 class="sectionTitle">Things to do</h2>
                     <hr class="hr1">
-                    <p class="sectionIntro">There are many things to do in Kaoshiung. From hiking in the beautiful monkey mountain to sniffing culture at the Fo Guang Shan Buddha memorial center. On the map you will find our 12 most recommended activities and places to visit
+                    <p class="sectionIntro">There are many things to do in Kaohsiung. From hiking in the beautiful monkey mountain to sniffing culture at the Fo Guang Shan Buddha memorial center. On the map you will find our 12 most recommended activities and places to visit
                         when staying in Kaohsiung.</p>
                 </div>
             </div>
@@ -88,26 +89,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div id="mapThings"></div>
                     <input type="checkbox" name="filterThings" data-category="nature" class='chk-btn' checked>
                     <label for='nature'>Nature</label>
                     <input type="checkbox" name="filterThings" data-category="culture" class='chk-btn' checked>
                     <label for='culture'>Culture</label>
+                    <div id="mapThings"></div>
                 </div>
                 <div class="col-md-6">
                     <h6 class="showThings" data-poi="pier">&#9657 Pier2 Art Center</h6>
                     <div class="activity" id="pier">
-                        <p>The arts center was originally an abandoned warehouse site due to Kaohsiung's shift from industrial city to service city. Due to the persistence of local artists, the area was finally released and remade to be an arts center.</p>
+                        <p>The art center was originally an abandoned warehouse site due to Kaohsiung's shift from industrial city to service city. Due to persistence of local artists, the area was finally released and remade to an arts center.</p>
                     </div>
 
                     <h6 class="showThings" data-poi="lotus">&#9657 lotus lake</h6>
                     <div class="activity" id="lotus">
-                        <p>Lotus lake is an artificial lake and popular tourist destination on the east side of Zuoying District in Kaohsiung. Opened in 1951, it is famous for the lotus plants on the lake and the numerous temples around the lake.</p>
+                        <p>Lotus lake is an artificial lake and popular tourist destination on the east side of Zuoying District in Kaohsiung. Opened in 1951, it is famous for the lotus plants on the lake and the many temples around the lake.</p>
                     </div>
 
                     <h6 class="showThings" data-poi="qijin">&#9657 qijin</h6>
                     <div class="activity" id="qijin">
-                        <p>Qijin district is reached by ferry. It's home to many delicasy stores and tourist attractions such as Chi Jin Mazu Temple, Cihou forst, Cijin wind turbine park etc.</p>
+                        <p>Qijin district is reached by ferry. It's home to many delicacy stores and tourist attractions such as Chi Jin Mazu Temple, Cihou forest, Cijin wind turbine park etc.</p>
                     </div>
 
                     <h6 class="showThings" data-poi="zoo">&#9657Shou Shan viewpoint and zoo</h6>
@@ -123,12 +124,12 @@
 
                     <h6 class="showThings" data-poi="liuhe">&#9657Liuhe Night Market</h6>
                     <div class="activity" id="liuhe">
-                        <p>Liuhe Night Market is one of the most popular markets in Taiwan where seafood, handicrafts, clothing, knives, cameras and live animals are sold</p>
+                        <p>Liuhe Night Market is one of the most popular markets in Taiwan where seafood, handicrafts, clothing, knives, cameras and live animals are sold.</p>
                     </div>
 
                     <h6 class="showThings" data-poi="beach">&#9657Chaishan Secret Beach</h6>
                     <div class="activity" id="beach">
-                        <p>Chaishan secret beach is a small beach which can be reached by taking a small hike down a steap hill. It's usually very quiet there and it's a wonderful place to relax.</p>
+                        <p>Chaishan secret beach is a small beach which can be reached by taking a small hike down a steep hill. It's usually very quiet there and it's a wonderful place to relax.</p>
                     </div>
 
                     <h6 class="showThings" data-poi="buddha">&#9657Fo Guang Shan Buddha Memorial Center</h6>
@@ -149,7 +150,7 @@
 
                     <h6 class="showThings" data-poi="exhibition">&#9657Kaohsiung Exhibition Center</h6>
                     <div class="activity" id="exhibition">
-                        <p>Kaohsiung Exhibition Center hosts many expos. It has become a help to balance the economic development between the north and the south. </p>
+                        <p>Kaohsiung Exhibition Center hosts many expos. It has become a help to balance the economic development between the north and the south.</p>
                     </div>
 
                     <h6 class="showThings" data-poi="artscentre">&#9657National Kaohsiung Centre for the Arts</h6>
@@ -241,21 +242,30 @@
                 <div class="col-12">
                     <h2 class="sectionTitle">Places to stay</h2>
                     <hr class="hr1">
-                    <p class="sectionIntro">Kaohsiung offers enough accomodation possibilities suitable for every type of traveler. There are hostels for backpackers and five star hotels for the luxury travelers. The most used are hotels, hostels, and AirBnB. However, Taiwan
-                        is also home to some unique accomodation types.</p>
+                    <p class="sectionIntro">Kaohsiung offers enough accommodation possibilities suitable for every type of traveler. There are hostels for backpackers and five-star hotels for the luxury travelers. The most used are hotels, hostels, and AirBnB. However, Taiwan
+                        is also home to some unique accommodation types. </p>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4">
+                <div class="col-12 col-md-6 col-lg-4 placesToStay">
                     <h3>Hotspring resorts</h3>
+                    <p>Relaxing in hot springs is a real Taiwanese favorite. Mostly it's done in pools where you usually have three or four different water temperature pools. There are also natural hot springs which can be found in the mountains and near
+                        the sea on the east coast. Next to the bigger hot springs, there are hot spring hotels. Where you can rent a room and spring water is pumped into a tub in your room or on the balcony.</p>
+                    <img src="media/hotspring.jpg" class="img-fluid" alt="Hot spring hotel tub">
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <h3>homestay</h3>
+                <div class="col-12 col-md-6 col-lg-4 placesToStay">
+                    <h3>Homestay</h3>
+                    <p>Taiwan minsu(homestay) is a unique way of staying in Taiwan as it is manned by the home owners themselves You live with them, learn their local culture and live and eat like they do. This way of experiencing the culture has grown in
+                        popularity over the years. Recently, booking websites started appearing where you can arrange this accommodation. Before, it was only possible to do this through a network.</p>
+                    <img src="media/homestay.jpg" class="img-fluid" alt="Homestay house">
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <h3>blabla</h3>
+                <div class="col-12 col-md-6 col-lg-4 placesToStay">
+                    <h3>Bed&Breakfast</h3>
+                    <p>The B&B scene in Taiwan has become a unique experience since each Bed and Breakfast has set its own characteristic reflecting the background and culture of its owner and the local community. Because the amount of travelers to Taiwan
+                        has increased continuously over the last years, travelers are looking for affordable places to stay and locals have seen an opportunity. </p>
+                    <img src="media/b&b.jpg" class="img-fluid" alt="Bed and Breakfast">
                 </div>
             </div>
         </div>
@@ -299,7 +309,7 @@
                     <h3>Plane</h3>
                     <p>Kaohsiung international airport is an international airport. It only offers flights within Asia. It's convenient to reach from China and Japan.</p>
                     <img src="media/airport.jpg" class="img-fluid" alt="Plane">
-                    <p>For more information on flights going to and leaving Kaoshiung International airport, visit the <a href="https://www.kia.gov.tw/English/" target="_blank">KIA website</a>.</p>
+                    <p>For more information on flights going to and leaving Kaohsiung International airport, visit the <a href="https://www.kia.gov.tw/English/" target="_blank">KIA website</a>.</p>
                 </div>
             </div>
         </div>
@@ -343,7 +353,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center">Copyright Ivar Saris 2019; this website is created for educational purposes, I don't own the rigths to any of the images. Please visit my Github and LinkedIn page to get to know me a little bit and contact me if you would like to colaborate.
+            <p class="m-0 text-center">Copyright Ivar Saris 2019; this website is created for educational purposes, I don't own the rights to any of the images. Please visit my Github and LinkedIn page to get to know me a bit and contact me if you would like to collaborate.
                 <a href="https://www.linkedin.com/in/ivar-saris-100bb481/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/ivarsaris" target="_blank"><i class="fab fa-github-square"></i></a></p>
         </div>

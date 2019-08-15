@@ -55,23 +55,26 @@ section {
 }
 
 .hr2 {
-  border-top: 1px solid #fff;
   width: 40%;
+  border-top: 1px solid #fff;
 }
 
 /*navbar*/
 
+.navbar-nav {
+  text-align: left;
+}
+
 .navbar-expand {
-  display: block;
+  display: flex;
   flex-basis: auto;
 }
 
 .navbar-collapse {
-  display: block;
+  display: flex;
 }
 
 .navbar {
-  display: grid;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -120,6 +123,7 @@ section {
   max-height: auto;
   margin: auto;
   border: 5px solid #7a93b2;
+  margin-bottom: 10px;
 }
 
 #things-to-do p {
@@ -130,15 +134,12 @@ section {
   cursor: pointer;
 }
 
-
 /*on display none so the toggle function starts with 
 not showing the restaurants when loading the page*/
 
 .activity{
   display: none;
 }
-
-
 
 /* food images with sliding text. Concept taken from 
 https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s, 
@@ -254,16 +255,30 @@ not showing the restaurants when loading the page*/
 
 .showRestaurants {
   display: none;
+  text-align: inherit;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*places to stay*/
 
+.placesToStay {
+  margin-bottom: 30px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.placesToStay h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 /*How to get there section*/
 
 .howToGetThere {
   margin-bottom: 30px;
-  text-align: justify;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -276,6 +291,8 @@ not showing the restaurants when loading the page*/
 
 .howToGetThere img {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
   height: 300px;
   max-width: 100%;
