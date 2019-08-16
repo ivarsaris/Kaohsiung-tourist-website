@@ -60,24 +60,8 @@ section {
 }
 
 /*navbar*/
-
-.navbar-nav {
-  text-align: left;
-}
-
-.navbar-expand {
-  display: flex;
-  flex-basis: auto;
-}
-
-.navbar-collapse {
-  display: flex;
-}
-
-.navbar {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+#navbarResponsive {
+    display: block!important;
 }
 
 @media screen and (max-width: 576px) {
@@ -104,13 +88,16 @@ section {
   width: fit-content;
   height: fit-content;
   padding: 20px;
-  margin: 15%;
+  margin: 10%;
 }
 
 @media screen and (max-width: 576px) {
   .titleText {
-    margin: 5%;
+    margin: 2%;
     padding: 5px;
+  }
+  .titleText p {
+    display: none;
   }
 }
 
@@ -353,13 +340,13 @@ not showing the restaurants when loading the page*/
 
 /*footer*/
 footer {
-  color: rgba(255,255,255,.5);
+  color: #A0A0A0;
 }
 
 footer a, footer a:visited {
-  color: rgba(255,255,255,.5);
+  color: #A0A0A0;
 }
 
 footer a:hover {
-  color: rgba(255,255,255,.75);
+  color: #E0E0E0;
 }
