@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // get all elements with class 'showThings'
     var activityItems = document.getElementsByClassName('showThings');
     
-    // iterate through all activity items
+    // iterate through activity items
     for (var i = 0; i < activityItems.length; i++) {
         
         // add a click event listener to each item

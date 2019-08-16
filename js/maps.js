@@ -1,5 +1,5 @@
-// define variables for maps
-var mapThings, mapPlaces;
+// define variable for map
+var mapThings;
 
 // array of markers for the Things map
 var markersThings = [{
@@ -10,7 +10,7 @@ var markersThings = [{
     },
     {
         coordinates: { lat: 22.68506, lng: 120.297396 },
-        infoContent: "<h5>lotus lake</h5>",
+        infoContent: "<h5>Lotus lake</h5>",
         id: "lotus",
         category: "nature"
     },
@@ -92,30 +92,30 @@ function addMarker(properties) {
         position: properties.coordinates,
         map: mapThings,
     });
-    
+
     // Adding infowindow to marker
     marker.infoWindow = new google.maps.InfoWindow({
         content: properties.infoContent
     });
-    
+
     // window opens when clicking
     marker.addListener("click", function() {
         marker.infoWindow.open(mapThings, marker);
     });
-    
+
     // return marker after adding
     return marker;
 }
 
 // hide all info windows defined in markersThings
 function hideAllInfoWindows() {
-   markersThings.forEach(function(markerThing) {
-     var marker = markerThing.mapsMarker;
-     marker.infoWindow.close();
-  }); 
+    markersThings.forEach(function(markerThing) {
+        var marker = markerThing.mapsMarker;
+        marker.infoWindow.close();
+    });
 }
 
-// callback function for goole maps api
+// callback function for google maps api
 function initMap() {
     // map things to do
     mapThings = new google.maps.Map(document.getElementById("mapThings"), {
@@ -131,19 +131,46 @@ function initMap() {
         // add markers to the mapThings
         markersThings[i].mapsMarker = addMarker(markersThings[i]);
     }
-    
+
     // filterThings checkboxes for hiding and showing markers of a certain category
     var checkboxes = document.getElementsByName("filterThings");
-    
-    // Iterate through all checkboxes 
+
+    // Iterate through the checkboxes 
     checkboxes.forEach(function(checkbox) {
         // listen for change events
-       checkbox.addEventListener('change', function() {
-           var visibility = this.checked;
-           var category = this.dataset.category;
-           showHideCategory(category, visibility);
-       });
+        checkbox.addEventListener('change', function() {
+            var visibility = this.checked;
+            var category = this.dataset.category;
+            showHideCategory(category, visibility);
+        });
     });
-}    
     
+    // ..................................   
     
+    // get all elements with class "cultureActivity"
+    var cultureActivities = document.getElementsByClassName("cultureActivity");
+    // get all elements with class "natureActivity"
+    var natureActivities = document.getElementsByClassName("natureActivity");
+
+    //iterate through culture activities
+    for (var i = 0; i < cultureActivities.length; i++) {
+
+        // filterThings checkboxes for hiding and showing markers of a certain category
+        var checkboxes = document.getElementsByName("filterThings");
+
+        // Iterate through the checkboxes 
+        checkboxes.forEach(function(checkbox) {
+
+            // listen for change events
+            checkbox.addEventListener('change', function() {
+                var visibility = this.checked;
+                var category = this.dataset.category;
+                showHideCategory(category, visibility);
+            });
+        });
+
+    }
+    //....................................
+}
+
+

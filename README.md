@@ -43,7 +43,7 @@ Features implemented, and left to implement later.
 * **Google maps API with markers -** Visitors can find a map with recommended activities.
 * **Filter function -** Visitors can filter these activities and return all cultural or nature activities on the map.
 * **Information dropdown and marker activation -** When clicking on an activity, an information section drops down. Also the marker on the map is activated so the visitor sees where the activity is located.
-* **Form which sends e-mail -** The visitor can 
+* **Form which sends e-mail -** The visitor can fill out and submit a form on the website. This will send an e-mail to the website creator. The content of the e-mail is a template completed with information from the answers on the form. 
 
 ### Features left to implement
 
