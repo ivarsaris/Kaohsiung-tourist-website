@@ -157,6 +157,9 @@ function initMap() {
 
         // filterThings checkboxes for hiding and showing markers of a certain category
         var checkboxes = document.getElementsByName("filterThings");
+        
+        // get all elements with class "showThings"
+        var showThings = document.getElementsByClassName("showThings") ;
 
         // Iterate through the checkboxes 
         checkboxes.forEach(function(checkbox) {
@@ -166,6 +169,9 @@ function initMap() {
                 var visibility = this.checked;
                 var category = this.dataset.category;
                 showHideCategory(category, visibility);
+                for (var item of showThings) {
+                    if (item.dataset.category === category) $(item).toggle(visibility) ;
+                }
             });
         });
 
