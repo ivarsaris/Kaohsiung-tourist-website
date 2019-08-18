@@ -24,10 +24,40 @@ I started by creating [user stories](https://github.com/ivarsaris/Kaohsiung-tour
 
 ### Design
 
-In terms of design, I got inspiration from several (tourist)websites that I visited. I created a single page website because this 
+**1. strategy** 
+This website is for tourists who like to explore the lesser known destinations. Koahsiung is an, in my opinion, underrated 
+city. The goal of the website is to introduce all Kaohsiung has to offer in terms of tourist attraction, activities, culture, nature, food. As well
+as offering types of accommodation and various transportation methods to get to Kaohsiung. 
+
+**2. scope** 
+In order to achieve this goal, the following sections will be included in the webpage;
+* Introduction; To introduce the city.
+* Things to do; Interesting activities and where to find them.
+* Foods to eat; Local foods explained and where to eat them.
+* Places to stay; Types of accommodation.
+* How to get there; Transportation methods to get to Kaohsiung explained.
+* Your custom tailored holiday; Possibility to get a custom tailored holiday send to you.
+
+**3. structure** 
+The sections contain the following content
+* Introduction; A background picture with a slogan in a box on top of the image. Under the image a welcome text and introduction to Kaohsiung.
+* Things to do; A Google Maps integration with markers on the map showing where all the activities are. On the side is a list of all the activities.
+when an activity is clicked, an introduction appears.
+* foods to eat; Four sections, each with a local food. The background is an image of the food. when the image is hovered, a description of the food
+appears. Under the picture is a dropdown list. when this is clicked, reccommenden restaurants and their address appears.
+
+**4. Skeleton** 
+The user will navigate through the page via a smooth scrolling navbar which is fixed to the top of the screen. Each section has an anchor where the
+nav item links to.
+
+Each section has its own background- and text colour. Each section consists of several colums. On large screens, the colums are displayed next to each other.
+On small screens, they are stacked on top of each other so the content doesn't become too small to read. 
+
+**5. Surface**
+In terms of visual design, I got inspiration from several (tourist)websites that I visited. I created a single page website because this 
 makes it convenient for the visitor, to have all information together on one page. I used two text and background color combinations, white(#FFFFFF)
 text on a blue/gray(#7a93b2) background, and dark gray(#343a40) text on a white background. The section alternate between the two combinations. The 
-navbar and footer have light gray (#A0A0A0) text on a dark gray background. The font Helvetica has been used throughout the website. 
+navbar and footer have light gray (#A0A0A0) text on a dark gray background. The font Helvetica has been used throughout the website.
 
 ### Mockup
 
