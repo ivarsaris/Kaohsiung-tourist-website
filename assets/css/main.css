@@ -75,7 +75,7 @@ for a dropdown navbar to be useful on a small screen*/
 /*welcome image with text */
 
 .title {
-  background: url("../media/kaohsiung.jpg");
+  background: url("../media/images/kaohsiung.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -141,19 +141,19 @@ https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s,
 adapted to this webpage */
 
 .dumpling {
-  background-image: url(../media/dumplings.jpg);
+  background-image: url(../media/images/dumplings.jpg);
 }
 
 .snowIce {
-  background-image: url(../media/ice.jpeg);
+  background-image: url(../media/images/ice.jpeg);
 }
 
 .tofu {
-  background-image: url(../media/tofu.jpg);
+  background-image: url(../media/images/tofu.jpg);
 }
 
 .breakfast {
-  background-image: url(../media/breakfast.jpg);
+  background-image: url(../media/images/breakfast.jpg);
 }
 
 .foodColumn {

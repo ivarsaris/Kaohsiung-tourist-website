@@ -20,7 +20,7 @@ to offer.
 
 #### User stories
 
-I started by creating [user stories](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/userstories) to help determine what features to add to the website.
+I started by creating [user stories](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/userstories.md) to help determine what features to add to the website.
 
 ### Design
 
@@ -44,7 +44,7 @@ Features implemented, and left to implement later.
 * **Filter function -** Visitors can filter these activities and return all cultural or nature activities on the map.
 * **Information dropdown and marker activation -** When clicking on an activity, an information section drops down. Also the marker on the map is activated so the visitor sees where the activity is located.
 * **Form which sends e-mail -** The visitor can fill out and submit a form on the website. This will send an e-mail to the website creator. The content of the e-mail is a template completed with information from the answers on the form.
-(https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/media/form.png) (https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/media/formmail.png)
+![Image of form on webpage](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/media/form.png) ![Image of e-mail from submitted form](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/media/formmail.png)
 
 ### Features left to implement
 
@@ -107,7 +107,7 @@ https://jigsaw.w3.org/css-validator/
 
 ## Deployment 
 
-The website is hosted on Github Pages(https://ivarsaris.github.io/Kaohsiung-tourist-website/) 
+The website is hosted on [Github Pages](https://ivarsaris.github.io/Kaohsiung-tourist-website/) 
 
 In order to host on GitHub pages, the following steps need to be taken; 
 
@@ -149,4 +149,4 @@ Images were taken from Google. I don’t own the copyright to any of the images.
 
 I started the project with a [Bootstrap template](https://startbootstrap.com/templates/scrolling-nav/) for a single page website with a smooth scrolling navigation bar.  
 
-Food images with text sliding up on hover. Concept taken from [this](https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s) YouTube video, and adapted to this webpage. 
+Food images with text sliding up on hover. Concept taken from [this YouTube video](https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s), and adapted to this webpage. 
