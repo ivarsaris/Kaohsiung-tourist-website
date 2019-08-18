@@ -51,7 +51,7 @@ section {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.57);
+  border-top: 1px solid #343a40e8;
 }
 
 .hr2 {
@@ -64,6 +64,8 @@ section {
     display: block!important;
 }
 
+/* display none on small screen so the navbar doesn't show. the page is not long enough
+for a dropdown navbar to be useful on a small screen*/
 @media screen and (max-width: 576px) {
   .navbar {
     display: none;
@@ -85,12 +87,14 @@ section {
   background-color: #7a93b2;
   opacity: 0.8;
   color: white;
+  text-align: center;
   width: fit-content;
   height: fit-content;
   padding: 20px;
   margin: 10%;
 }
 
+/* adaptions for small screen so the background image isn't obscured by welcome text */
 @media screen and (max-width: 576px) {
   .titleText {
     margin: 2%;
@@ -107,7 +111,6 @@ section {
   width: 800px;
   height: 500px;
   max-width: 100%;
-  max-height: auto;
   margin: auto;
   border: 5px solid #7a93b2;
   margin-bottom: 10px;
@@ -119,6 +122,11 @@ section {
 
 .showThings {
   cursor: pointer;
+}
+
+.scrollsection {
+  height: 220px;
+  overflow-y: scroll;
 }
 
 /*on display none so the toggle function starts with 
@@ -165,7 +173,6 @@ adapted to this webpage */
   width: 400px;
   height: 400px;
   max-width: 90%;
-  max-height: auto;
   float: left;
   background-size: 100%;
   background-position: center;
@@ -262,6 +269,13 @@ not showing the restaurants when loading the page*/
   margin-bottom: 10px;
 }
 
+/* height of p set so the images are aligned on larger screens*/
+@media screen and (min-width: 768px) {
+  .placesToStay p {
+  height: 250px;
+}
+}
+
 /*How to get there section*/
 
 .howToGetThere {
@@ -271,9 +285,28 @@ not showing the restaurants when loading the page*/
   margin-right: auto;
 }
 
-.howToGetThere h3 {
+.howToGetThereHeading {
   text-align: center;
   margin-bottom: 10px;
+}
+
+/* height of p set so the images are aligned on larger screens*/
+@media screen and (min-width: 768px) {
+  .longText {
+  height: 310px;
+  }
+  .shortText {
+  height: 160px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .longText {
+  height: 240px;
+  }
+  .shortText {
+  height: 135px;
+  }
 }
 
 .howToGetThere img {
@@ -283,13 +316,6 @@ not showing the restaurants when loading the page*/
   width: 400px;
   height: 300px;
   max-width: 100%;
-  max-height: auto;
-}
-
-@media screen and (min-width: 980px) {
-  .howToGetThere {
-    height: 620px;
-  }
 }
 
 .howToGetThere a, .howToGetThere a:visited {
