@@ -8,7 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!--title and favicon-->
     <title>Kaohsiung</title>
+    <link rel='icon' sizes="192x192" href="media/favicon.png" type="image/x-icon">
 
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
@@ -23,8 +25,8 @@
     <link href="css/main.css" rel="stylesheet">
 
     <!--Email js for contact form-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
         (function() {
             emailjs.init("user_cVgLoodOgPqYs4Rd8I7TZ");
         })();
@@ -61,23 +63,27 @@
         </div>
     </nav>
 
+    <!-- welcome section, background image with textbox on top. secondBackground class gives blue background and white text -->
     <section class="secondBackground" id="welcome">
         <div class="container">
             <div class="row">
-                <!--background picture-->
-                <div class="title"> 
+                <!-- text for over welcome image, titleText class has background image in CSS -->
+                <div class="title">
                     <div class="titleText">
                         <h1>Kaohsiung</h1>
                         <p>Taiwan's blossoming </p>
                         <p>cultural city</p>
                     </div>
+                    <p>As Taiwan's second largest city after Taipei, Kaohsiung is a little known travel destination. The harbour city is home to many temples, delicious food, entertainment, and a rich culture.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- things to do section, firstbackground class gives white background and dark grey text, id is the anchor for navigation   -->
     <section class="firstBackground" id="things-to-do">
         <div class="container">
+            <!-- section heading, class sectionTitle and sectionIntro have styling in CSS and are used for every section heading -->
             <div class="row">
                 <div class="col-12">
                     <h2 class="sectionTitle">Things to do</h2>
@@ -88,73 +94,67 @@
             </div>
         </div>
         <div class="container">
+            <!-- checkboxes that can be ticked to filter activities between nature and culture -->
             <div class="row">
                 <div class="col-md-6">
-                    <input type="checkbox" name="filterThings" data-category="nature" class='chk-btn' checked>
+                    <input id="nature" type="checkbox" name="filterThings" data-category="nature" class='chk-btn' checked>
                     <label for='nature'>Nature</label>
-                    <input type="checkbox" name="filterThings" data-category="culture" class='chk-btn' checked>
+                    <input id="culture" type="checkbox" name="filterThings" data-category="culture" class='chk-btn' checked>
                     <label for='culture'>Culture</label>
                     <div id="mapThings"></div>
                 </div>
-                <div class="col-md-6">
-                    <h6 class="showThings" data-category="culture" data-poi="pier">&#9657 Pier2 Art Center</h6>
+                <!-- all activities that are shown on the map and listed, h6 are shown and p drops down when h6 is clicked
+                    data-poi is triggered by js function that makes the marker shown when the h6 is clicked. 
+                    div class is triggered by js function that filters activities between nature and culture. -->
+                <div class="col-md-6 scrollsection">
+                    <h3>Activities</h3>
+                    <h6 class="showThings" data-category="culture" data-poi="pier">&#9657; Pier2 Art Center</h6>
                     <div class="activity cultureActivity" id="pier">
                         <p>The art center was originally an abandoned warehouse site due to Kaohsiung's shift from industrial city to service city. Due to persistence of local artists, the area was finally released and remade to an arts center.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="nature" data-poi="lotus">&#9657 Lotus lake</h6>
+                    <h6 class="showThings" data-category="nature" data-poi="lotus">&#9657; Lotus lake</h6>
                     <div class="activity natureActivity" id="lotus">
                         <p>Lotus lake is an artificial lake and popular tourist destination on the east side of Zuoying District in Kaohsiung. Opened in 1951, it is famous for the lotus plants on the lake and the many temples around the lake.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="culture" data-poi="qijin">&#9657 Qijin</h6>
+                    <h6 class="showThings" data-category="culture" data-poi="qijin">&#9657; Qijin</h6>
                     <div class="activity cultureActivity" id="qijin">
                         <p>Qijin district is reached by ferry. It's home to many delicacy stores and tourist attractions such as Chi Jin Mazu Temple, Cihou forest, Cijin wind turbine park etc.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="nature" data-poi="zoo">&#9657Shou Shan viewpoint and zoo</h6>
+                    <h6 class="showThings" data-category="nature" data-poi="zoo">&#9657; Shou Shan viewpoint and zoo</h6>
                     <div class="activity natureActivity" id="zoo">
                         <p>Shou Shan Zoo houses animals from Asia, Africa, Americas and Australia, such as lions, tigers, elephants, black bears and kangaroos. Next to the zoo is a viewpoint from where the whole city of Kaohsiung can be seen. Many couples
                             go here to take pictures.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="culture" data-poi="ruifeng">&#9657Ruifeng Night Market</h6>
+                    <h6 class="showThings" data-category="culture" data-poi="ruifeng">&#9657; Ruifeng Night Market</h6>
                     <div class="activity cultureActivity" id="ruifeng">
                         <p>The night market holds more than thousand stalls with variety, which are mostly food vendors, small eateries also the surrounding businesses of selling non-food items such as accessories or fashion apparel.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="culture" data-poi="liuhe">&#9657Liuhe Night Market</h6>
+                    <h6 class="showThings" data-category="culture" data-poi="liuhe">&#9657; Liuhe Night Market</h6>
                     <div class="activity cultureActivity" id="liuhe">
                         <p>Liuhe Night Market is one of the most popular markets in Taiwan where seafood, handicrafts, clothing, knives, cameras and live animals are sold.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="nature" data-poi="beach">&#9657Chaishan Secret Beach</h6>
+                    <h6 class="showThings" data-category="nature" data-poi="beach">&#9657; Chaishan Secret Beach</h6>
                     <div class="activity natureActivity" id="beach">
                         <p>Chaishan secret beach is a small beach which can be reached by taking a small hike down a steep hill. It's usually very quiet there and it's a wonderful place to relax.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="culture" data-poi="buddha">&#9657Fo Guang Shan Buddha Memorial Center</h6>
+                    <h6 class="showThings" data-category="culture" data-poi="buddha">&#9657; Fo Guang Shan Buddha Memorial Center</h6>
                     <div class="activity cultureActivity" id="buddha">
                         <p>Fo Guang Shan Buddha Memorial Center is a Mahayana Buddhist cultural, religious and educational museum. The museum is affiliated with Fo Guang Shan, one of Taiwan's largest Buddhist organizations.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="nature" data-poi="river">&#9657Love river</h6>
+                    <h6 class="showThings" data-category="nature" data-poi="river">&#9657; Love river</h6>
                     <div class="activity natureActivity" id="river">
                         <p>Love river runs all the way through Kaohsiung. Next to the river are many small parks.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="nature" data-poi="monkey">&#9657Chai Shan(monkey mountain)</h6>
+                    <h6 class="showThings" data-category="nature" data-poi="monkey">&#9657; Chai Shan(monkey mountain)</h6>
                     <div class="activity natureActivity" id="monkey">
                         <p>Shoushan is the one of the mountains where Kaohsiung residents can see natural biological specimens within an hour's drive. There is an extensive system of boardwalk hiking trails that circle the mountain. Hikers can enjoy tea
                             at various tea stations sprinkled throughout the trails.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="culture" data-poi="exhibition">&#9657Kaohsiung Exhibition Center</h6>
+                    <h6 class="showThings" data-category="culture" data-poi="exhibition">&#9657; Kaohsiung Exhibition Center</h6>
                     <div class="activity cultureActivity" id="exhibition">
                         <p>Kaohsiung Exhibition Center hosts many expos. It has become a help to balance the economic development between the north and the south.</p>
                     </div>
-
-                    <h6 class="showThings" data-category="culture" data-poi="artscentre">&#9657National Kaohsiung Centre for the Arts</h6>
+                    <h6 class="showThings" data-category="culture" data-poi="artscentre">&#9657; National Kaohsiung Centre for the Arts</h6>
                     <div class="activity cultureActivity" id="artscentre">
                         <p>National Kaohsiung Centre for the Arts is a performance arts centre. Many young people go here to dance, talk and hang out in the evening.</p>
                     </div>
@@ -162,8 +162,9 @@
             </div>
         </div>
     </section>
-
+    <!-- foods to eat section -->
     <section class="secondBackground" id="foods-to-eat">
+        <!-- foods to eat heading -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -173,6 +174,7 @@
                 </div>
             </div>
         </div>
+        <!-- foods to eat content, four images with slideup text -->
         <div class="container foodsToEat">
             <div class="row">
                 <div class="col-12 col-md-6">
@@ -181,8 +183,10 @@
                         <div class="foodImage dumpling" data-title="Dumplings" data-text="In Taiwan, you might have the chance to taste a variety of “dumplings” such as Wonton, Shuijiao, Zhengjiao, 
                         potstickers or even atypical ones like Tangyuan, Zongzi, Xiaolongbao - keep in mind that they are all very different types of food, but unfortunately there is not enough English vocabulary to grasp them all!"></div>
                     </div>
+                    <!-- restaurantDropdown class is shown on the page. onclick function triggers js function 
+                      that shows showRestaurant class when restaurantDropdown is clicked -->
                     <div class="row">
-                        <p class="restaurantDropdown" onclick="showRestaurant(this)"><strong>&#9657 Show restaurants</strong></p>
+                        <p class="restaurantDropdown" onclick="showRestaurant(this)"><strong>&#9657; Show restaurants</strong></p>
                         <div class="showRestaurants">
                             <p>Din Tai Fung Kaohsiung Store, B1, No.777 Bo'ai Er Road, Kaohsiung</p>
                             <p>Yonghe Steamed Dumpling, No. 33, Yancheng St., Yancheng Dist, Kaohsiung</p>
@@ -190,15 +194,13 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-6">
                     <div class="row">
-                        <!--background image of slideup foodimage-->
                         <div class="foodImage snowIce" data-title="Snow ice" data-text="The dessert consists of a large mound of ice shavings with various toppings on top. A wide variety toppings exist, 
                         but the most common ones include sugar water, condensed milk, adzuki beans, mung beans, and tapioca balls."></div>
                     </div>
                     <div class="row">
-                        <p class="restaurantDropdown" onclick="showRestaurant(this)"><strong>&#9657 Show restaurants</strong></p>
+                        <p class="restaurantDropdown" onclick="showRestaurant(this)"><strong>&#9657; Show restaurants</strong></p>
                         <div class="showRestaurants">
                             <p>Bingo snowice, No.76, Liuhe 2nd Rd.,, Xinxing District, Kaohsiung 800</p>
                             <p>Gao Xiong Po Po Shaved Ice, No. 135, Qixian 3rd Rd., Yancheng Dist, Kaohsiung</p>
@@ -206,15 +208,13 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-6">
                     <div class="row">
-                        <!--background image of slideup foodimage-->
                         <div class="foodImage tofu" data-title="Stinky Tofu" data-text="Stinky tofu is a Chinese form of fermented tofu that has a strong odor. 
                         It is usually sold at night markets or roadside stands as a snack, or in lunch bars as a side dish, rather than in restaurants."></div>
                     </div>
                     <div class="row">
-                        <p class="restaurantDropdown" onclick="showRestaurant(this)"><strong>&#9657 Show restaurants</strong></p>
+                        <p class="restaurantDropdown" onclick="showRestaurant(this)"><strong>&#9657; Show restaurants</strong></p>
                         <div class="showRestaurants">
                             <p>Jiang Hao Ji Stinky Tofu King, No. 40, Minsheng 2nd Rd., Xinxing Dist, Kaohsiung</p>
                             <p>Fu Ji Stinky Tofu, No. 117-7, Wufu 3rd Rd., Lingya Dist, Kaohsiung</p>
@@ -222,14 +222,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-6">
                     <div class="row">
-                        <!--background image of slideup foodimage-->
                         <div class="foodImage breakfast" data-title="Taiwanese breakfast" data-text="The typical Taiwanese breakfast consists of a lot of carbs and egg. It's heavy and usually washed down by a hot glass of soymilk. "></div>
                     </div>
                     <div class="row">
-                        <p class="restaurantDropdown" onclick="showRestaurant(this)"><strong>&#9657 Show restaurants</strong></p>
+                        <p class="restaurantDropdown" onclick="showRestaurant(this)"><strong>&#9657; Show restaurants</strong></p>
                         <div class="showRestaurants">
                             <p>Xinglongju, No.186 Liuhe Second Road, Kaohsiung</p>
                             <p>Lao Jiang Milk Black Tea, No. 214-3, Sanduo 3rd Rd., Lingya Dist, Kaohsiung</p>
@@ -240,8 +238,9 @@
             </div>
         </div>
     </section>
-
+    <!-- places to stay section -->
     <section id="places-to-stay" class="firstBackground">
+        <!-- places to stay heading -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -252,6 +251,7 @@
                 </div>
             </div>
         </div>
+        <!-- places to stay content -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 placesToStay">
@@ -275,8 +275,9 @@
             </div>
         </div>
     </section>
-
+    <!-- how to get there section -->
     <section class="secondBackground" id="how-to-get-there">
+        <!-- how to get there heading -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -286,42 +287,54 @@
                 </div>
             </div>
         </div>
+        <!-- how to get there content -->
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 howToGetThere">
-                    <h3>High Speed Rail</h3>
-                    <p>Taiwan High Speed Rail has made Taiwan’s public transport system more convenient, because it brings cities and towns closer. Today, passengers can even travel between Taipei and Kaohsiung in one day. Along the “Western Corridor” of
-                        Taiwan are 12 THSR stations: Nangang, Taipei, Banqiao, Taoyuan, Hsinchu, Miaoli, Taichung, Changhua, Yunlin, Chiayi, Tainan and Zhuoying. Moving among the corridor’s stations at 300km per hour the THSR offers truly convenient rides.
-                    </p>
+                    <h3 class="howToGetThereHeading">High Speed Rail</h3>
+                    <div class="longText">
+                        <p>Taiwan High Speed Rail has made Taiwan’s public transport system more convenient, because it brings cities and towns closer. Today, passengers can even travel between Taipei and Kaohsiung in one day. Along the “Western Corridor”
+                            of Taiwan are 12 THSR stations: Nangang, Taipei, Banqiao, Taoyuan, Hsinchu, Miaoli, Taichung, Changhua, Yunlin, Chiayi, Tainan and Zhuoying. Moving among the corridor’s stations at 300km per hour the THSR offers truly convenient
+                            rides.
+                        </p>
+                    </div>
                     <img src="media/hsr.jpg" class="img-fluid" alt="High speed rail">
                     <p>For more information on Taiwan's High Speed Rail, and to find fares and prizes, visit the <a href="https://www.thsrc.com.tw/index_en.html" target="_blank">THSR website</a>.</p>
                 </div>
                 <div class="col-12 col-md-6 howToGetThere">
-                    <h3>Train</h3>
-                    <p>Taiwan Railway Administration has an extensive system running along both the east and west coasts. There are no services into the Central Mountains, except tourism branch lines. Trains are comfortable, clean, safe and reliable, with
-                        few delays. Reserved seating is available, and food and snacks are served. All major cities are connected by train.</p>
+                    <h3 class="howToGetThereHeading">Train</h3>
+                    <div class="longText">
+                        <p>Taiwan Railway Administration has an extensive system running along both the east and west coasts. There are no services into the Central Mountains, except tourism branch lines. Trains are comfortable, clean, safe and reliable,
+                            with few delays. Reserved seating is available, and food and snacks are served. All major cities are connected by train.</p>
+                    </div>
                     <img src="media/train.jpg" class="img-fluid" alt="Train">
                     <p>For fares and timetables, see the <a href="http://twtraffic.tra.gov.tw/twrail/EN_QuickSearch.aspx" target="_blank">TRA website</a>.</p>
                 </div>
                 <div class="col-12 col-md-6 howToGetThere">
-                    <h3>Bus</h3>
-                    <p>On the west coast there are very frequent departures (some 24-hour operations), with midweek and late-evening discounts. Most companies serve the same west-coast routes. The main transit points are Taipei, Taichung, Tainan and Kaohsiung.
-                    </p>
+                    <h3 class="howToGetThereHeading">Bus</h3>
+                    <div class="shortText">
+                        <p>On the west coast there are very frequent departures (some 24-hour operations), with midweek and late-evening discounts. Most companies serve the same west-coast routes. The main transit points are Taipei, Taichung, Tainan and
+                            Kaohsiung.
+                        </p>
+                    </div>
                     <img src="media/bus.jpg" class="img-fluid" alt="Bus">
                     <p>For more information on Taiwan's bus system, and to find bus schedules, visit the <a href="https://www.taiwanbus.tw/ByBus.aspx?Lang=En" target="_blank">Taiwan bus website</a>.</p>
                 </div>
                 <div class="col-12 col-md-6 howToGetThere">
-                    <h3>Plane</h3>
-                    <p>Kaohsiung international airport is an international airport. It only offers flights within Asia. It's convenient to reach from China and Japan.</p>
+                    <h3 class="howToGetThereHeading">Plane</h3>
+                    <div class="shortText">
+                        <p class="howToGetThereText">Kaohsiung international airport is an international airport. It only offers flights within Asia. It's convenient to reach from China and Japan.</p>
+                    </div>
                     <img src="media/airport.jpg" class="img-fluid" alt="Plane">
                     <p>For more information on flights going to and leaving Kaohsiung International airport, visit the <a href="https://www.kia.gov.tw/English/" target="_blank">KIA website</a>.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- custom tailored holiday section -->
     <section class="firstBackground" id="custom-holiday">
         <div class="container">
+            <!-- custom tailored holiday heading -->
             <div class="row">
                 <div class="col-12">
                     <h2 class="sectionTitle">Your custom tailored holiday</h2>
@@ -329,14 +342,16 @@
                     <p class="sectionIntro">Planning on visiting Kaohsiung? Fill out the form below and we will send you a custom tailored holiday including the best way to get to Kaohsiung, activity packages and recommended hotels and restaurants. You will also receive tips
                         and tricks on how to get around in Kaohsiung and how to experience local life.</p>
                 </div>
+                <!-- custom tailored holiday content, form that is filled out and submitted. Submitted form is 
+                    sent to website owner through emailjs -->
                 <div class="center-form">
                     <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" class="form" id="name" placeholder="Name" required/>
                         <input type="text" name="email" class="form" id="email" placeholder="Email address" required/>
                         <input type="text" name="phone" class="form" id="phoneNumber" placeholder="Phone number" required/>
-                        <label for="days" class="formtext">How many days are you planning to stay in Kaohsiung?</label>
+                        <label class="formtext">How many days are you planning to stay in Kaohsiung?</label>
                         <select name="days" class="form" required>
-                            <option value="choose">choose</option>
+                            <option value="">choose</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
@@ -344,11 +359,11 @@
                             <option value="7">7</option>
                             <option value="longer">longer than 7 days</option>
                         </select>
-                        <input type="text" name="travelingFrom" class="form" id "travelingFrom" placeholder="Traveling to Kaohsiung from" required/>
+                        <input type="text" name="travelingFrom" class="form" id="travelingFrom" placeholder="Traveling to Kaohsiung from" required/>
                         <input type="text" name="budget" class="form" id="budget" placeholder="Budget(in US$)" />
-                        <label for="message" class="formtext">Comments or message for us</label>
+                        <label for="message" class="formtext">Message for u</label>
                         <textarea name="message" class="form" rows="3" cols="40"></textarea>
-                        <input type="submit" value="Submit" class="formtext" />
+                        <input id="message" type="submit" value="Submit" class="formtext" />
                     </form>
                 </div>
             </div>

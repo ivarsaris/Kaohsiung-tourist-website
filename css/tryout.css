@@ -18,7 +18,7 @@ h3 {
 }
 
 h6 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 section {
@@ -51,32 +51,21 @@ section {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.57);
+  border-top: 1px solid #343a40e8;
 }
 
 .hr2 {
-  border-top: 1px solid #fff;
   width: 40%;
+  border-top: 1px solid #fff;
 }
 
 /*navbar*/
-
-.navbar-expand {
-  display: block;
-  flex-basis: auto;
+#navbarResponsive {
+    display: block!important;
 }
 
-.navbar-collapse {
-  display: block;
-}
-
-.navbar {
-  display: grid;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* display none on small screen so the navbar doesn't show. the page is not long enough
+for a dropdown navbar to be useful on a small screen*/
 @media screen and (max-width: 576px) {
   .navbar {
     display: none;
@@ -98,16 +87,21 @@ section {
   background-color: #7a93b2;
   opacity: 0.8;
   color: white;
+  text-align: center;
   width: fit-content;
   height: fit-content;
   padding: 20px;
-  margin: 15%;
+  margin: 10%;
 }
 
+/* adaptions for small screen so the background image isn't obscured by welcome text */
 @media screen and (max-width: 576px) {
   .titleText {
-    margin: 5%;
+    margin: 2%;
     padding: 5px;
+  }
+  .titleText p {
+    display: none;
   }
 }
 
@@ -117,9 +111,9 @@ section {
   width: 800px;
   height: 500px;
   max-width: 100%;
-  max-height: auto;
   margin: auto;
   border: 5px solid #7a93b2;
+  margin-bottom: 10px;
 }
 
 #things-to-do p {
@@ -130,67 +124,37 @@ section {
   cursor: pointer;
 }
 
+.scrollsection {
+  height: 220px;
+  overflow-y: scroll;
+}
 
 /*on display none so the toggle function starts with 
 not showing the restaurants when loading the page*/
 
-#lotus {
+.activity{
   display: none;
 }
-
-#liuhe {
-  display: none;
-}
-
-#qijin {
-  display: none;
-}
-
-#pier {
-  display: none;
-}
-
-#zoo {
-  display: none;
-}
-
-#ruifeng {
-  display: none;
-}
-
-#chaishan {
-  display: none;
-}
-
-#buddha {
-  display: none;
-}
-
-#monkey {
-  display: none;
-}
-
-#river {
-  display: none;
-}
-
-#exhibition {
-  display: none;
-}
-
-#artscentre {
-  display: none;
-}
-
-#beach {
-  display: none;
-}
-
-
 
 /* food images with sliding text. Concept taken from 
 https://www.youtube.com/watch?v=EXWjMswCuf8&t=249s, 
 adapted to this webpage */
+
+.dumpling {
+  background-image: url(../media/dumplings.jpg);
+}
+
+.snowIce {
+  background-image: url(../media/ice.jpeg);
+}
+
+.tofu {
+  background-image: url(../media/tofu.jpg);
+}
+
+.breakfast {
+  background-image: url(../media/breakfast.jpg);
+}
 
 .foodColumn {
   display: block;
@@ -209,7 +173,6 @@ adapted to this webpage */
   width: 400px;
   height: 400px;
   max-width: 90%;
-  max-height: auto;
   float: left;
   background-size: 100%;
   background-position: center;
@@ -277,69 +240,91 @@ adapted to this webpage */
   max-width: 100%;
 }
 
-.showRestaurants {
+.restaurantDropdown {
   cursor: pointer;
 }
 
 /*on display none so the toggle function starts with 
 not showing the restaurants when loading the page*/
 
-#dumplingRestaurants {
+.showRestaurants {
   display: none;
-}
-
-#iceRestaurants {
-  display: none;
-}
-
-#tofuRestaurants {
-  display: none;
-}
-
-#breakfastRestaurants {
-  display: none;
+  text-align: inherit;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*places to stay*/
 
-#mapPlaces {
-  width: 800px;
-  height: 500px;
-  max-width: 100%;
-  max-height: auto;
-  margin: auto;
-  border: 5px solid #7a93b2;
+.placesToStay {
+  margin-bottom: 30px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.placesToStay h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* height of p set so the images are aligned on larger screens*/
+@media screen and (min-width: 768px) {
+  .placesToStay p {
+  height: 250px;
+}
 }
 
 /*How to get there section*/
 
 .howToGetThere {
   margin-bottom: 30px;
-  text-align: justify;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.howToGetThere h3 {
+.howToGetThereHeading {
   text-align: center;
   margin-bottom: 10px;
 }
 
+/* height of p set so the images are aligned on larger screens*/
+@media screen and (min-width: 768px) {
+  .longText {
+  height: 310px;
+  }
+  .shortText {
+  height: 160px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .longText {
+  height: 240px;
+  }
+  .shortText {
+  height: 135px;
+  }
+}
+
 .howToGetThere img {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
   height: 300px;
   max-width: 100%;
-  max-height: auto;
 }
 
+.howToGetThere a, .howToGetThere a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
 
-
-@media screen and (min-width: 980px) {
-  .howToGetThere {
-    height: 620px;
-  }
+.howToGetThere a:hover {
+  color: #343a40;
 }
 
 /*contact form*/
@@ -377,4 +362,17 @@ not showing the restaurants when loading the page*/
     margin-left: 5%;
     margin-right: 5%;
   }
+}
+
+/*footer*/
+footer {
+  color: #A0A0A0;
+}
+
+footer a, footer a:visited {
+  color: #A0A0A0;
+}
+
+footer a:hover {
+  color: #E0E0E0;
 }
