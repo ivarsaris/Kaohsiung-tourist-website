@@ -117,23 +117,33 @@ The website has been tested on several devices in order to see if it’s respons
 
 ### Browser compatibility 
 
-The website has been run in several browsers to make sure it’s compatible with the most common ones. The website runs well in Google Chrome, Mozilla Firefox, and Safari.  
+The website has been run in several browsers to make sure it’s compatible with the most common ones. The website runs well in Google Chrome, Mozilla Firefox, and Safari. Three bugs was 
+detected in Safari that I couldn't solve. 
+
+1. When clicking on a foodimage on an iPhone 7, the description of the food doesn't appear over the image.
+2. On a MacBook, the activities don't appear next to the map, but appear under it. This shouldn't be the case on a screen larger than 768 pixels.
+3. On a MacBook, the how to get there sections don't appear in two pairs of two like they should. Instead the HSR section stands alone, followed by the train
+and bus section next to each other, followed by the plane section alone.
 
 ### Code Validation 
 
 The code has been run through several validators to make sure there are no errors.  
 
-HTML -  
+#### HTML 
 
 https://validator.w3.org/ 
 
 https://html5.validator.nu/ 
 
-CSS -  
+#### CSS  
 
 https://codebeautify.org/cssvalidate 
 
 https://jigsaw.w3.org/css-validator/ 
+
+#### JavaScript
+
+https://jshint.com/
 
 ## Deployment 
 
