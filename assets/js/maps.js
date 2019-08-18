@@ -145,12 +145,8 @@ function initMap() {
         });
     });
     
-    // ..................................   
-    
     // get all elements with class "cultureActivity"
     var cultureActivities = document.getElementsByClassName("cultureActivity");
-    // get all elements with class "natureActivity"
-    var natureActivities = document.getElementsByClassName("natureActivity");
 
     //iterate through culture activities
     for (var i = 0; i < cultureActivities.length; i++) {
@@ -176,7 +172,6 @@ function initMap() {
         });
 
     }
-    //....................................
 }
 
 
