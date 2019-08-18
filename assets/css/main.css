@@ -299,7 +299,7 @@ not showing the restaurants when loading the page*/
 /* height of p set so the images are aligned on larger screens*/
 @media screen and (min-width: 768px) {
   .longText {
-  height: 310px;
+  height: 320px;
   }
   .shortText {
   height: 160px;
