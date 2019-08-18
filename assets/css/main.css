@@ -96,6 +96,10 @@ for a dropdown navbar to be useful on a small screen*/
 
 /* adaptions for small screen so the background image isn't obscured by welcome text */
 @media screen and (max-width: 576px) {
+  .title {
+    width: 100%;
+    height: 250px;
+  }
   .titleText {
     margin: 2%;
     padding: 5px;
@@ -124,8 +128,10 @@ for a dropdown navbar to be useful on a small screen*/
   cursor: pointer;
 }
 
+/*activities in a scrollable section so the page doesn't stretch out
+when multiple activity descriptions are displayes*/
 .scrollsection {
-  height: 220px;
+  height: 500px;
   overflow-y: scroll;
 }
 

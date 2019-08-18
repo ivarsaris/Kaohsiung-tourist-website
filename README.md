@@ -6,7 +6,7 @@ An interactive tourist information website for the city of Kaohsiung. Visitors c
 on what to do in Kaohsiung, how to get there, what kind of accommodation to stay, what foods to eat and where, 
 and they can request a tailored holiday package being send to them. 
 
-![image of homepage on different screens](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/media/responsive.png)
+![image of homepage on different screens](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/assets/media/images/responsive.png)
 
 [Live website](https://ivarsaris.github.io/Kaohsiung-tourist-website/)
 
@@ -44,7 +44,7 @@ Features implemented, and left to implement later.
 * **Filter function -** Visitors can filter these activities and return all cultural or nature activities on the map.
 * **Information dropdown and marker activation -** When clicking on an activity, an information section drops down. Also the marker on the map is activated so the visitor sees where the activity is located.
 * **Form which sends e-mail -** The visitor can fill out and submit a form on the website. This will send an e-mail to the website creator. The content of the e-mail is a template completed with information from the answers on the form.
-![Image of form on webpage](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/media/form.png) ![Image of e-mail from submitted form](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/media/formmail.png)
+![Image of form on webpage](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/assets/media/images/form.png) ![Image of e-mail from submitted form](https://github.com/ivarsaris/Kaohsiung-tourist-website/blob/master/assets/media/images/formmail.png)
 
 ### Features left to implement
 
